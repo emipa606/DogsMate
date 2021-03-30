@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Spidercamp's Horses</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Horse"]/pawnKinds</xpath>
+          <value>
+            <li>SCQuarterHorse</li>
+            <li>SCBlackHorse</li>
+            <li>SCWhiteHorse</li>
+            <li>SCPalomino</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

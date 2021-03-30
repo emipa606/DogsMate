@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Red Wolves</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Wolf"]/pawnKinds</xpath>
+          <value>
+            <li>Wolf_Red</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

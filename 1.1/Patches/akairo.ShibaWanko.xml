@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Shiba Wanko</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
+          <value>
+            <li>aka_shibainu</li>
+            <li>aka_shibainuB</li>
+            <li>aka_shibainuW</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

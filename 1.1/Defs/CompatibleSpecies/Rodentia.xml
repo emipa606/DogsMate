@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>GuineaPig</defName>
+    <label>guinea pigs</label>
+    <description>Cavia is a genus in the subfamily Caviinae that contains the rodents commonly known as guinea pigs or cavies. The best-known species in this genus is the domestic guinea pig, Cavia porcellus, an important meat animal in South America and a common household pet outside South America.</description>
+    <pawnKinds>
+      <li>GuineaPig</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Hare</defName>
+    <label>hares</label>
+    <description>Hares and jackrabbits are leporids belonging to the genus Lepus. Hares are classified in the same family as rabbits. They are similar in size and form to rabbits and have similar herbivorous diets, but generally have longer ears and live solitarily or in pairs. Also unlike rabbits, their young are able to fend for themselves shortly after birth rather than emerging blind and helpless. Most are fast runners. Hare species are native to Africa, Eurasia and North America.</description>
+    <pawnKinds>
+      <li>Hare</li>
+      <li>Snowhare</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Porcupine</defName>
+    <label>porcupines</label>
+    <description>Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators. The term covers two families of animals: the Old World porcupines of family Hystricidae, and the New World porcupines of family Erethizontidae. Both families belong to the infraorder Hystricognathi within the profoundly diverse order Rodentia and display superficially similar coats of quills: despite this, the two groups are distinct from each other and are not closely related to each other within the Hystricognathi.</description>
+    <pawnKinds>
+      <!-- populated by VAE Tundra and ACP -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+</Defs>

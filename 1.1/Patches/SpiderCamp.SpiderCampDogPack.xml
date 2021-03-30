@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Spidercamp's Dog Pack</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
+          <value>
+            <!--Smol Dogs-->
+            <li>SCMiniatureDachshund</li>
+            <li>SCSchnauzer</li>
+            <li>SCPug</li>
+            <li>SCWelshCorgi</li>
+            <!--Medium/Large Puppers-->
+            <li>SCAfghanHound</li>
+            <li>SCBorderCollie</li>
+            <li>SCBullTerrier</li>
+            <li>SCChowchow</li>
+            <li>SCCollie</li>
+            <li>SCDoberman</li>
+            <li>SCGoldenRetriever</li>
+            <li>SCGreyhound</li>
+            <li>SCOldEnglishSheepdog</li>
+            <li>SCStandardPoodle</li>
+            <!--XL Pupperonies-->
+            <li>SCBorzoi</li>
+            <li>SCBullmastiff</li>
+            <li>SCCaucasianshepherd</li>
+            <li>SCSaintbernard</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Dogs mate</name>
+  <author>Revolus</author>
+  <packageId>Revolus.DogsMate</packageId>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <!-- dependencies -->
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <!-- contained patches -->
+    <li>ACPteam.ACP</li>
+    <li>akairo.LetsHaveaCat</li>
+    <li>akairo.LetsHaveaCat.vad.VAECatsandDogs</li>
+    <li>akairo.Pomeranian</li>
+    <li>akairo.ShibaWanko</li>
+    <li>Alfinalightmagefalling.fancyrats</li>
+    <li>ArmoredAmpharos.SnowRats</li>
+    <li>Erin.Critters</li>
+    <li>forestfey.DireWolf</li>
+    <li>forestfey.GermanShepherd</li>
+    <li>Mlie.TropickappRainforestMod</li>
+    <li>pausbrak.redwolves</li>
+    <li>RaZim.ZGFMartens</li>
+    <li>rtp.rhodesianridgebacks</li>
+    <li>SpiderCamp.SpiderCampDogPack</li>
+    <li>SpiderCamp.SpiderCampHorses</li>
+    <li>VanillaExpanded.VAEAS</li>
+    <li>VanillaExpanded.VAEAU</li>
+    <li>VanillaExpanded.VAEBF</li>
+    <li>VanillaExpanded.VAECD</li>
+    <li>VanillaExpanded.VAED</li>
+    <li>VanillaExpanded.VAEIS</li>
+    <li>VanillaExpanded.VAET</li>
+    <li>VanillaExpanded.VAETR</li>
+  </loadAfter>
+  <description><![CDATA[There are so many different species of cat and dogs in this game and its mods. Vanilla Animals Expanded alone adds more more than ten breeds of both species. This makes it difficult to breed these animals, because normally only dogs of the same breed mate.
+
+But since when to dogs care about their care about the breed of their mate?
+
+<b>This mod makes it possible for different breeds of cats, dogs, bunnies, bears, foxes, and wolves to reproduce.</b> Half the litter will have the father's breed, half the mother's breed. Currently only viviparous animals can be patched, no egg-laying animals.
+
+Included are patches for AnimalCollabProj, Vanilla Animals Expanded, Let's Have a Cat!, and Spidercamp's Dog Pack, but more can easibly be added.
+
+<b>Only dependency:</b> Harmony.
+<b>Save games:</b> Can be added to, and removed from running games.
+<b>Compatibility:</b> Replaces JobGiver_Mate.TryGiveJob and Pregnant.DoBirthSpawn.]]></description>
+</ModMetaData>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Cat-like animals go into Felidae.xml -->
+  <!-- Dog-like animals go into Canidae.xml -->
+  <!-- Other carnivorans go into Carnivora.xml  -->
+  <!-- Rodents and rodent-like animals go into Rodentia.xml -->
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Bison</defName>
+    <label>bison</label>
+    <description>The American bison or simply bison (Bison bison), also commonly known as the American buffalo or simply buffalo, is an American species of bison that once roamed North America in vast herds. Its historical range, by 9000 BCE, is described as the great bison belt, a tract of rich grassland that ran from Alaska to the Gulf of Mexico, east to the Atlantic Seaboard (nearly to the Atlantic tidewater in some areas) as far north as New York and south to Georgia and, according to some sources, down to Florida, with sightings in North Carolina near Buffalo Ford on the Catawba River as late as 1750. It nearly became extinct by a combination of commercial hunting and slaughter in the 19th century and introduction of bovine diseases from domestic cattle. With a population in excess of 60 million in the late 18th century, the species was down to 541 animals by 1889. Recovery efforts expanded in the mid-20th century, with a resurgence to roughly 31,000 animals today, largely restricted to a few national parks and reserves. Through multiple reintroductions, the species is now also freely roaming wild in some regions in Yakutia as well as Mexico.</description>
+    <pawnKinds>
+      <li>Bison</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Cow</defName>
+    <label>cattle</label>
+    <description>Cattle, or cows (female) and bulls (male), are the most common type of large domesticated ungulates. They are a prominent modern member of the subfamily Bovinae, are the most widespread species of the genus Bos, and are most commonly classified collectively as Bos taurus.</description>
+    <pawnKinds>
+      <li>Cow</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Giraffe</defName>
+    <label>giraffes</label>
+    <description>The giraffe (Giraffa) is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant. It is traditionally considered to be one species, Giraffa camelopardalis, with nine subspecies. However, the existence of up to eight extant giraffe species has been described, based upon research into the mitochondrial and nuclear DNA, as well as morphological measurements of Giraffa. Seven other species are extinct, prehistoric species known from fossils.</description>
+    <pawnKinds>
+      <!-- populated by VAE Arid Shrubland and ACP -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Hedgehog</defName>
+    <label>hedgehogs</label>
+    <description>A hedgehog is any of the spiny mammals of the subfamily Erinaceinae, in the eulipotyphlan family Erinaceidae. There are seventeen species of hedgehog in five genera found through parts of Europe, Asia, and Africa, and in New Zealand by introduction. There are no hedgehogs native to Australia and no living species native to the Americas (the extinct genus Amphechinus was once present in North America).</description>
+    <pawnKinds>
+      <!-- populated by ACP and Erin's critters -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Horse</defName>
+    <label>horses</label>
+    <description>The wild horse (Equus ferus) is a species of the genus Equus, which includes as subspecies the modern domesticated horse (Equus ferus caballus) as well as the undomesticated tarpan (Equus ferus ferus, now extinct), and the endangered Przewalski's horse (Equus ferus przewalskii).</description>
+    <pawnKinds>
+      <li>Horse</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Sheep</defName>
+    <label>sheeps</label>
+    <description>Sheep (Ovis aries) are quadrupedal, ruminant mammals typically kept as livestock. Like most ruminants, sheep are members of the order Artiodactyla, the even-toed ungulates. Although the name sheep applies to many species in the genus Ovis, in everyday usage it almost always refers to Ovis aries. Numbering a little over one billion, domestic sheep are also the most numerous species of sheep. An adult female is referred to as a ewe, an intact male as a ram, occasionally a tup, a castrated male as a wether, and a young sheep as a lamb.</description>
+    <pawnKinds>
+      <li>Sheep</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Tapir</defName>
+    <label>tapirs</label>
+    <description>A tapir is a large, herbivorous mammal, similar in shape to a pig, with a short, prehensile nose trunk. Tapirs inhabit jungle and forest regions of South America, Central America, and Southeast Asia. There are four widely recognized extant species of tapirs, all of the family Tapiridae and the genus Tapirus. They are the Brazilian tapir, the Malayan tapir, the Baird's tapir, and the mountain tapir. The four species that have been evaluated are all classified on the IUCN Red List as Endangered or Vulnerable. The tapirs have a number of extinct relatives in the superfamily Tapiroidea. The closest extant relatives of the tapirs are the other odd-toed ungulates, which include horses, donkeys, zebras and rhinoceroses.</description>
+    <pawnKinds>
+      <!-- populated by VAE Tropical Rainforest and ACP -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+</Defs>
