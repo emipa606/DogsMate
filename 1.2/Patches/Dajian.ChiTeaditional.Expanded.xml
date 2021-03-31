@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="PanDa_Normal"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Panda"]/pawnKinds</xpath>
+      <value>
+        <li>PanDa_Normal</li>
+        <li>PanDa_JiDi</li>
+        <li>PanDa_ReDai</li>
+        <li>PanDa_JiDi</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -25,4 +25,27 @@
       <!-- populated by VAE Tundra and ACP -->
     </pawnKinds>
   </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Ferret</defName>
+    <label>ferrets</label>
+    <description>The ferret (Mustela putorius furo) is the domesticated form of the European polecat, a mammal belonging to the same genus as the weasel, Mustela, in the family Mustelidae. Their fur is typically brown, black, white, or mixed. They have an average length of 51 cm (20 in), including a 13 cm (5.1 in) tail, weigh about between 0.7 and 2.0 kg (1.5 and 4.4 lb), and have a natural lifespan of 7 to 10 years. Ferrets are sexually dimorphic predators, with males being substantially larger than females.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Squirrel</defName>
+    <label>squirrels</label>
+    <description>Squirrels are members of the family Sciuridae, a family that includes small or medium-size rodents. The squirrel family includes tree squirrels, ground squirrels, chipmunks, marmots (including groundhogs), flying squirrels, and prairie dogs amongst other rodents. Squirrels are indigenous to the Americas, Eurasia, and Africa, and were introduced by humans to Australia. The earliest known fossilized squirrels date from the Eocene epoch, and among other living rodent families, the squirrels are most closely related to the mountain beaver and to the dormice.</description>
+    <pawnKinds>
+      <li>Squirrel</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Rat</defName>
+    <label>rats</label>
+    <description>Rats are various medium-sized, long-tailed rodents. Species of rats are found throughout the order Rodentia, but stereotypical rats are found in the genus Rattus. Other rat genera include Neotoma (pack rats), Bandicota (bandicoot rats) and Dipodomys (kangaroo rats).</description>
+    <pawnKinds>
+      <li>Rat</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
 </Defs>

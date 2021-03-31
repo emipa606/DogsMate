@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZEle_Appo"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Elephant"]/pawnKinds</xpath>
+      <value>
+        <li>ZEle_Appo</li>
+        <li>ZEle_AsianElephant</li>
+        <li>ZEle_BorneoPygmy</li>
+        <li>ZEle_Kallana</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

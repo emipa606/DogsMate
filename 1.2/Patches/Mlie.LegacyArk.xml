@@ -41,4 +41,24 @@
       </value>
     </match>
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Badger"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Badger"]/pawnKinds</xpath>
+      <value>
+        <li>Badger</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="IndianGiantSquirrel"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Squirrel"]/pawnKinds</xpath>
+      <value>
+        <li>IndianGiantSquirrel</li>
+      </value>
+    </match>
+  </Operation>
 </Patch>
