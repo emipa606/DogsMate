@@ -18,6 +18,24 @@
             <li>AEXP_Giraffe</li>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Wolf"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_Coyote</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Hippopotamus"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_Hippopotamus</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Antelope"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_Wildebeest</li>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>

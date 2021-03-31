@@ -12,6 +12,12 @@
             <li>AEXP_Porcupine</li>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Deer"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_Moose</li>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>

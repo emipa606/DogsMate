@@ -13,4 +13,24 @@
       </value>
     </match>
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LaoHu_HuaNan"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Tiger"]/pawnKinds</xpath>
+      <value>
+        <li>LaoHu_HuaNan</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="JinSiMonkey"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Monkey"]/pawnKinds</xpath>
+      <value>
+        <li>JinSiMonkey</li>
+      </value>
+    </match>
+  </Operation>
 </Patch>

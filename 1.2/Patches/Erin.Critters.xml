@@ -24,6 +24,12 @@
             <li>Hedgehog</li>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Armadillo"]/pawnKinds</xpath>
+          <value>
+            <li>Armadillo</li>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>

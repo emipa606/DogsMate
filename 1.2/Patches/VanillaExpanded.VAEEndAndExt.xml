@@ -60,4 +60,24 @@
       </value>
     </match>
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Pangolin"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Pangolin"]/pawnKinds</xpath>
+      <value>
+        <li>AEXP_Pangolin</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Bonobo"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Gorilla"]/pawnKinds</xpath>
+      <value>
+        <li>AEXP_Bonobo</li>
+      </value>
+    </match>
+  </Operation>
 </Patch>

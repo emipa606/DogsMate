@@ -61,4 +61,14 @@
       </value>
     </match>
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Gerbil"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Rat"]/pawnKinds</xpath>
+      <value>
+        <li>Gerbil</li>
+      </value>
+    </match>
+  </Operation>
 </Patch>

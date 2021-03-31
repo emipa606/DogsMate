@@ -37,6 +37,12 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Giraffe"]/pawnKinds</xpath>
+          <value>
+            <li>CK_Okapi</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
           <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Tiger"]/pawnKinds</xpath>
           <value>
             <li>CK_Tiger</li>

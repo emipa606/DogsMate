@@ -12,6 +12,18 @@
             <li>AEXP_BlackBear</li>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Otter"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_Otter</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Wolf"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_ArcticCoyote</li>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>

@@ -31,9 +31,21 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Squirrel"]/pawnKinds</xpath>
+          <value>
+            <li>ACPChipmunk</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
           <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
           <value>
             <li>ACPWildDog</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Ferret"]/pawnKinds</xpath>
+          <value>
+            <li>ACPFerret</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -46,6 +58,12 @@
           <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Giraffe"]/pawnKinds</xpath>
           <value>
             <li>ACPGiraffe</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Goat"]/pawnKinds</xpath>
+          <value>
+            <li>ACPMajoreraGoat</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -69,6 +87,13 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Badger"]/pawnKinds</xpath>
+          <value>
+            <li>ACPHoneyBadger</li>
+            <li>ACPMegabadger</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
           <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Horse"]/pawnKinds</xpath>
           <value>
             <li>ACPHorse</li>
@@ -88,9 +113,21 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Camel"]/pawnKinds</xpath>
+          <value>
+            <li>ACPLlama</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
           <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Panda"]/pawnKinds</xpath>
           <value>
             <li>ACPPanda</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Otter"]/pawnKinds</xpath>
+          <value>
+            <li>ACPOtter</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -103,6 +140,12 @@
           <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Porcupine"]/pawnKinds</xpath>
           <value>
             <li>ACPPorcupine</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="RedPanda"]/pawnKinds</xpath>
+          <value>
+            <li>ACPRedPanda</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">

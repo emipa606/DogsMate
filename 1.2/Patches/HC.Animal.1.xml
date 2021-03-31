@@ -10,4 +10,24 @@
       </value>
     </match>
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Pangolin"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Pangolin"]/pawnKinds</xpath>
+      <value>
+        <li>HC_Pangolin</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HC_Weasel"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Weasel"]/pawnKinds</xpath>
+      <value>
+        <li>HC_Weasel</li>
+      </value>
+    </match>
+  </Operation>
 </Patch>
