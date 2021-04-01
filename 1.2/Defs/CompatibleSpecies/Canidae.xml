@@ -11,6 +11,13 @@
     </pawnKinds>
   </Revolus.DogsMate.AnimalGroupDef>
   <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Tanuki</defName>
+    <label>tanukis</label>
+    <description>The Japanese raccoon dog (Nyctereutes procyonoides viverrinus), also known as the tanuki (Japanese: タヌキ or 狸; pronounced [taꜜnɯki]), is a subspecies of the Asian raccoon dog. Researchers have suggested that they be considered a separate species, N. viverrinus, or that raccoon dogs of Japan could be further divisible into separate subspecies as N. p. procyonoides (hondo-tanuki, ホンドタヌキ, 本土狸) and N. p. albus (ezo-tanuki, エゾタヌキ, 蝦夷狸), but both views are controversial.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
     <defName>Fox</defName>
     <label>foxes</label>
     <description>Vulpes is a genus of the Caninae. The members of this genus are colloquially referred to as true foxes, meaning they form a proper clade. The word "fox" occurs on the common names of species. True foxes are distinguished from members of the genus Canis, such as domesticated dogs, wolves, jackals and coyotes, by their smaller size (5–11 kg) and flatter skull. They have black, triangular markings between their eyes and nose, and the tip of their tail is often a different color from the rest of their pelt. The typical lifespan for this genus is between two and four years, but can reach up to a decade.</description>

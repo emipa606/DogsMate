@@ -1,32 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="RG-EAP_WoollyMammoth"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Dhole"]</xpath>
     <success>Always</success>
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Elephant"]/pawnKinds</xpath>
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Wolf"]/pawnKinds</xpath>
       <value>
-        <li>RG-EAP_WoollyMammoth</li>
+        <li>Dhole</li>
+        <li>Manedwolf</li>
       </value>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="RG-EAP_WoollyRhino"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Dingo"]</xpath>
     <success>Always</success>
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Rhinoceros"]/pawnKinds</xpath>
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
       <value>
-        <li>RG-EAP_WoollyRhino</li>
+        <li>Dingo</li>
       </value>
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="RG-EAP-Protoceratidae"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Racoon_dog"]</xpath>
     <success>Always</success>
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Deer"]/pawnKinds</xpath>
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Tanuki"]/pawnKinds</xpath>
       <value>
-        <li>RG-EAP-Protoceratidae</li>
+        <li>Racoon_dog</li>
       </value>
     </match>
   </Operation>
