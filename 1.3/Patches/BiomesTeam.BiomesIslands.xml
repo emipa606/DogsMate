@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BiomesIslands_ShetlandPony"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Horse"]/pawnKinds</xpath>
+      <value>
+        <li>BiomesIslands_ShetlandPony</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BiomesIslands_Whale"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Whale"]/pawnKinds</xpath>
+      <value>
+        <li>BiomesIslands_Whale</li>
+        <li>BiomesIslands_BoomWhale</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BiomesIslands_PhoebaniaRat"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Rat"]/pawnKinds</xpath>
+      <value>
+        <li>BiomesIslands_PhoebaniaRat</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

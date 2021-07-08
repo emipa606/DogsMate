@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- It's a mammal, but it lays eggs. Egg-laying animals are not implemented, yet. -->
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Platypus</defName>
+    <label>platypodes</label>
+    <!-- https://en.wiktionary.org/w/index.php?title=platypodes&oldid=59245806 -->
+    <description>The platypus (Ornithorhynchus anatinus), sometimes referred to as the duck-billed platypus, is a semiaquatic egg-laying mammal endemic to eastern Australia, including Tasmania. The platypus is the sole living representative of its family (Ornithorhynchidae) and genus (Ornithorhynchus), though a number of related species appear in the fossil record.</description>
+    <pawnKinds>
+      <!-- populated by VAE Australia and ACP -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+</Defs>

@@ -23,19 +23,19 @@ namespace Revolus.DogsMate
 
         private static readonly Dictionary<PawnKindDef, IReadOnlyDictionary<AnimalGroupDef, IReadOnlyList<HybridDef>>>
             kindToHybrids =
-                new();
+                new Dictionary<PawnKindDef, IReadOnlyDictionary<AnimalGroupDef, IReadOnlyList<HybridDef>>>();
 
         private static IReadOnlyDictionary<PawnKindDef, IReadOnlyList<PawnKindDef>> _hybridParents;
 
-        public readonly List<HybridHediff> childrenHediffs = new();
-        public readonly List<HybridHediff> femaleChildrenHediffs = new();
-        public readonly List<HybridHediff> maleChildrenHediffs = new();
+        public readonly List<HybridHediff> childrenHediffs = new List<HybridHediff>();
+        public readonly List<HybridHediff> femaleChildrenHediffs = new List<HybridHediff>();
+        public readonly List<HybridHediff> maleChildrenHediffs = new List<HybridHediff>();
 
         private bool? _isUsable;
-        public List<AnimalGroupDef> children = new();
+        public List<AnimalGroupDef> children = new List<AnimalGroupDef>();
 
         public SimpleCurve fertilizationFailesIfGreaterThanZeroCurve;
-        public List<AnimalGroupDef> parents = new();
+        public List<AnimalGroupDef> parents = new List<AnimalGroupDef>();
 
         public bool IsUsable
         {

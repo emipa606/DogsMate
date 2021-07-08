@@ -18,7 +18,7 @@ namespace Revolus.DogsMate
         private static readonly
             Dictionary<PawnKindDef, IReadOnlyDictionary<PawnKindDef, IReadOnlyCollection<HybridDef>>>
             compatibleFemalesDict =
-                new();
+                new Dictionary<PawnKindDef, IReadOnlyDictionary<PawnKindDef, IReadOnlyCollection<HybridDef>>>();
 
         public DogsMateMod(ModContentPack content) : base(content)
         {

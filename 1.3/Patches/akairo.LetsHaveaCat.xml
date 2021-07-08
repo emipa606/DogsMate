@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Let's Have a Cat!</li>
+      <li>Let's Have a Cat! - Version avoiding duplication with "VAE — Cats and Dogs"</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cat"]/pawnKinds</xpath>
+          <value>
+            <!-- Races_Animal_aka_NEKO_A.xml -->
+            <li>akaNEKO_shironeko</li>
+            <li>akaNEKO_kuroneko</li>
+            <li>akaNEKO_kijitora</li>
+            <li>akaNEKO_A_Shorthair</li>
+            <li>akaNEKO_Russian_Blue</li>
+            <li>akaNEKO_J_Bobtail</li>
+            <!-- Races_Animal_aka_NEKO_B.xml -->
+            <li>akaNEKO_Scottish_Fold</li>
+            <li>akaNEKO_Scottish_Fold_Long</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Let's Have a Cat!</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cat"]/pawnKinds</xpath>
+          <value>
+            <!-- Races_Animal_aka_NEKO_A.xml -->
+            <li>akaNEKO_Siamese</li>
+            <!-- Races_Animal_aka_NEKO_B.xml -->
+            <li>akaNEKO_Persian</li>
+            <li>akaNEKO_Maine_Coon</li>
+            <li>akaNEKO_N_Forest_Cat</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

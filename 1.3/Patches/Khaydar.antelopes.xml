@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Addax"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Antelope"]/pawnKinds</xpath>
+      <value>
+        <li>Addax</li>
+        <li>Bongo</li>
+        <li>Gemsbok</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

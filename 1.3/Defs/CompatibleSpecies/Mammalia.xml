@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Cat-like animals go into Felidae.xml -->
+  <!-- Dog-like animals go into Canidae.xml -->
+  <!-- Other carnivorans go into Carnivora.xml  -->
+  <!-- Rodents and rodent-like animals go into Rodentia.xml -->
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Bison</defName>
+    <label>bison</label>
+    <description>The American bison or simply bison (Bison bison), also commonly known as the American buffalo or simply buffalo, is an American species of bison that once roamed North America in vast herds. Its historical range, by 9000 BCE, is described as the great bison belt, a tract of rich grassland that ran from Alaska to the Gulf of Mexico, east to the Atlantic Seaboard (nearly to the Atlantic tidewater in some areas) as far north as New York and south to Georgia and, according to some sources, down to Florida, with sightings in North Carolina near Buffalo Ford on the Catawba River as late as 1750. It nearly became extinct by a combination of commercial hunting and slaughter in the 19th century and introduction of bovine diseases from domestic cattle. With a population in excess of 60 million in the late 18th century, the species was down to 541 animals by 1889. Recovery efforts expanded in the mid-20th century, with a resurgence to roughly 31,000 animals today, largely restricted to a few national parks and reserves. Through multiple reintroductions, the species is now also freely roaming wild in some regions in Yakutia as well as Mexico.</description>
+    <pawnKinds>
+      <li>Bison</li>
+      <li>Muffalo</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Cow</defName>
+    <label>cattle</label>
+    <description>Cattle, or cows (female) and bulls (male), are the most common type of large domesticated ungulates. They are a prominent modern member of the subfamily Bovinae, are the most widespread species of the genus Bos, and are most commonly classified collectively as Bos taurus.</description>
+    <pawnKinds>
+      <li>Cow</li>
+      <li>Yak</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Giraffe</defName>
+    <label>giraffes</label>
+    <description>The giraffe (Giraffa) is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant. It is traditionally considered to be one species, Giraffa camelopardalis, with nine subspecies. However, the existence of up to eight extant giraffe species has been described, based upon research into the mitochondrial and nuclear DNA, as well as morphological measurements of Giraffa. Seven other species are extinct, prehistoric species known from fossils.</description>
+    <pawnKinds>
+      <!-- populated by VAE Arid Shrubland and ACP -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Camel</defName>
+    <label>camels</label>
+    <description>A camel is an even-toed ungulate in the genus Camelus that bears distinctive fatty deposits known as "humps" on its back. Camels have long been domesticated and, as livestock, they provide food (milk and meat) and textiles (fiber and felt from hair). Camels are working animals especially suited to their desert habitat and are a vital means of transport for passengers and cargo. There are three surviving species of camel. The one-humped dromedary makes up 94% of the world's camel population, and the two-humped Bactrian camel makes up 6%. The Wild Bactrian camel is a separate species and is now critically endangered.</description>
+    <pawnKinds>
+      <li>Alpaca</li>
+      <li>Dromedary</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Elephant</defName>
+    <label>elephants</label>
+    <description>Elephants are the largest existing land animals. Three species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. Elephantidae is the only surviving family of the order Proboscidea; extinct members include the mastodons. The family Elephantidae also contains several now-extinct groups, including the mammoths and straight-tusked elephants. African elephants have larger ears and concave backs, whereas Asian elephants have smaller ears, and convex or level backs. Distinctive features of all elephants include a long proboscis called a trunk, tusks, large ear flaps, massive legs, and tough but sensitive skin. The trunk is used for breathing, bringing food and water to the mouth, and grasping objects. Tusks, which are derived from the incisor teeth, serve both as weapons and as tools for moving objects and digging. The large ear flaps assist in maintaining a constant body temperature as well as in communication. The pillar-like legs carry their great weight.</description>
+    <pawnKinds>
+      <li>Elephant</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Thrumbo</defName>
+    <label>thrumbos</label>
+    <description>A gigantic, graceful creature of unknown origin. The thrumbo is gentle by nature, but extremely dangerous when enraged. While its long fur is exceptionally beautiful, its hide is also incredibly resistant to damage. Its razor-sharp horn fetches a huge price.\n\nLegends say that an old thrumbo is the wisest creature in the universe - it simply chooses not to speak.</description>
+    <pawnKinds>
+      <li>Thrumbo</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Rhinoceros</defName>
+    <label>rhinoceros</label>
+    <description>A rhinoceros (Greek rhinokerōs 'nose-horned', from rhis 'nose', and keras 'horn'), commonly abbreviated to rhino, is a member of any of the five extant species of odd-toed ungulates in the family Rhinocerotidae, as well as any of the numerous extinct species therein. Two of the extant species are native to Africa, and three to Southern Asia. The term "rhinoceros" is often more broadly applied to now extinct species of the superfamily Rhinocerotoidea.</description>
+    <pawnKinds>
+      <li>Rhinoceros</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Hippopotamus</defName>
+    <label>hippopotamus</label>
+    <description>The hippopotamus (Hippopotamus amphibius), also called the hippo, common hippopotamus or river hippopotamus, is a large, mostly herbivorous, semiaquatic mammal and ungulate native to sub-Saharan Africa. It is one of only two extant species in the family Hippopotamidae, the other being the pygmy hippopotamus (Choeropsis liberiensis or Hexaprotodon liberiensis). The name comes from the ancient Greek for "river horse" (ἱπποπόταμος).</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Hedgehog</defName>
+    <label>hedgehogs</label>
+    <description>A hedgehog is any of the spiny mammals of the subfamily Erinaceinae, in the eulipotyphlan family Erinaceidae. There are seventeen species of hedgehog in five genera found through parts of Europe, Asia, and Africa, and in New Zealand by introduction. There are no hedgehogs native to Australia and no living species native to the Americas (the extinct genus Amphechinus was once present in North America).</description>
+    <pawnKinds>
+      <!-- populated by ACP and Erin's critters -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Pangolin</defName>
+    <label>pangolins</label>
+    <description>Pangolins, sometimes known as scaly anteaters, are mammals of the order Pholidota (/fɒlɪˈdoʊtə/, from Ancient Greek ϕολιδωτός 'clad in scales'). The one extant family, Manidae, has three genera: Manis, Phataginus and Smutsia. Manis comprises the four species found in Asia, while Phataginus and Smutsia include two species each, all found in sub-Saharan Africa. These species range in size from 30 to 100 cm (12 to 39 in). A number of extinct pangolin species are also known.</description>
+    <pawnKinds>
+      <!-- populated by ACP and Erin's critters -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Badger</defName>
+    <label>badgers</label>
+    <description>Badgers are short-legged omnivores mostly in the family Mustelidae (which also includes the otters, polecats, weasels, and ferrets), but also with two species called "badgers" in the related family Mephitidae (which also includes the skunks). Badgers are a polyphyletic grouping, and are not a natural taxonomic grouping: badgers are united by their squat bodies, adapted for fossorial activity. All belong to the caniform suborder of carnivoran mammals.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Otter</defName>
+    <label>otters</label>
+    <description>Otters are carnivorous mammals in the subfamily Lutrinae. The 13 extant otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates. Lutrinae is a branch of the Mustelidae family, which also includes weasels, badgers, mink, and wolverines, among other animals.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Horse</defName>
+    <label>horses</label>
+    <description>The wild horse (Equus ferus) is a species of the genus Equus, which includes as subspecies the modern domesticated horse (Equus ferus caballus) as well as the undomesticated tarpan (Equus ferus ferus, now extinct), and the endangered Przewalski's horse (Equus ferus przewalskii).</description>
+    <pawnKinds>
+      <li>Horse</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Zebra</defName>
+    <label>zebras</label>
+    <description>Zebras (subgenus Hippotigris) are African equines with distinctive black-and-white striped coats. There are three extant species: the Grévy's zebra (Equus grevyi), plains zebra (E. quagga), and the mountain zebra (E. zebra). Zebras share the genus Equus with horses and asses, the three groups being the only living members of the family Equidae. Zebra stripes come in different patterns, unique to each individual. Several theories have been proposed for the function of these stripes, with most evidence supporting them as a form of protection from biting flies. Zebras inhabit eastern and southern Africa and can be found in a variety of habitats such as savannahs, grasslands, woodlands, shrublands, and mountainous areas.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Donkey</defName>
+    <label>donkeys</label>
+    <description>The donkey or ass (Equus africanus asinus) is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals. Working donkeys are often associated with those living at or below subsistence levels. Small numbers of donkeys are kept for breeding or as pets in developed countries.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Sheep</defName>
+    <label>sheeps</label>
+    <description>Sheep (Ovis aries) are quadrupedal, ruminant mammals typically kept as livestock. Like most ruminants, sheep are members of the order Artiodactyla, the even-toed ungulates. Although the name sheep applies to many species in the genus Ovis, in everyday usage it almost always refers to Ovis aries. Numbering a little over one billion, domestic sheep are also the most numerous species of sheep. An adult female is referred to as a ewe, an intact male as a ram, occasionally a tup, a castrated male as a wether, and a young sheep as a lamb.</description>
+    <pawnKinds>
+      <li>Sheep</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Pig</defName>
+    <label>pigs</label>
+    <description>A pig is any of the animals in the genus Sus, within the even-toed ungulate family Suidae. Pigs include domestic pigs and their ancestor, the common Eurasian wild boar (Sus scrofa), along with other species. Pigs, like all suids, are native to the Eurasian and African continents, ranging from Europe to the Pacific islands. Suids other than the pig are the babirusa of Indonesia, the pygmy hog of South Asia, the warthog of Africa, and another genus of pigs from Africa. The suids are a sister clade to peccaries.</description>
+    <pawnKinds>
+      <li>WildBoar</li>
+      <li>Pig</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Tapir</defName>
+    <label>tapirs</label>
+    <description>A tapir is a large, herbivorous mammal, similar in shape to a pig, with a short, prehensile nose trunk. Tapirs inhabit jungle and forest regions of South America, Central America, and Southeast Asia. There are four widely recognized extant species of tapirs, all of the family Tapiridae and the genus Tapirus. They are the Brazilian tapir, the Malayan tapir, the Baird's tapir, and the mountain tapir. The four species that have been evaluated are all classified on the IUCN Red List as Endangered or Vulnerable. The tapirs have a number of extinct relatives in the superfamily Tapiroidea. The closest extant relatives of the tapirs are the other odd-toed ungulates, which include horses, donkeys, zebras and rhinoceroses.</description>
+    <pawnKinds>
+      <!-- populated by VAE Tropical Rainforest and ACP -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Armadillo</defName>
+    <label>armadillos</label>
+    <description>Armadillos (meaning "little armored ones" in Spanish) are New World placental mammals in the order Cingulata. The Chlamyphoridae and Dasypodidae are the only surviving families in the order, which is part of the superorder Xenarthra, along with the anteaters and sloths. Nine extinct genera and 21 extant species of armadillo have been described, some of which are distinguished by the number of bands on their armor. All species are native to the Americas, where they inhabit a variety of different environments.</description>
+    <pawnKinds>
+      <!-- populated by VAE Tropical Rainforest and ACP -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Wombat</defName>
+    <label>wombats</label>
+    <description>Wombats are short-legged, muscular quadrupedal marsupials that are native to Australia. They are about 1 m (40 in) in length with small, stubby tails and weigh between 20 and 35 kg (44 and 77 lb). There are three extant species and they are all members of the family Vombatidae. They are adaptable and habitat tolerant, and are found in forested, mountainous, and heathland areas of southern and eastern Australia, including Tasmania, as well as an isolated patch of about 300 ha (740 acres) in Epping Forest National Park in central Queensland.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Kangaroo</defName>
+    <label>kangaroos</label>
+    <description>The kangaroo is a marsupial from the family Macropodidae (macropods, meaning "large foot"). In common use the term is used to describe the largest species from this family, the red kangaroo, as well as the antilopine kangaroo, eastern grey kangaroo, and western grey kangaroo. Kangaroos are indigenous to Australia and New Guinea. The Australian government estimates that 34.3 million kangaroos lived within the commercial harvest areas of Australia in 2011, up from 25.1 million one year earlier.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Goat</defName>
+    <label>goats</label>
+    <description>The domestic goat or simply goat (Capra aegagrus hircus) is a subspecies of C. aegagrus domesticated from the wild goat of Southwest Asia and Eastern Europe. The goat is a member of the animal family Bovidae and the subfamily Caprinae, meaning it is closely related to the sheep. There are over 300 distinct breeds of goat. It is one of the oldest domesticated species of animal, according to archaeological evidence that its earliest domestication occurred in Iran at 10,000 calibrated calendar years ago.</description>
+    <pawnKinds>
+      <li>Goat</li>
+      <li>Ibex</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Antelope</defName>
+    <label>antelopes</label>
+    <description>The term antelope is used to refer to many species of even-toed ruminant indigenous to various regions in Africa and Eurasia. Antelope comprise a wastebasket taxon (miscellaneous group) within the family Bovidae, encompassing all Old World ruminants that are not bovines, sheep, or goats. A group of antelope is called a herd. Unlike deer antlers, which are shed and grown annually, antelope horns grow continuously.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Deer</defName>
+    <label>deers</label>
+    <description>Deer or true deer are hoofed ruminant mammals forming the family Cervidae. The two main groups of deer are the Cervinae, including the muntjac, the elk (wapiti), the red deer, the fallow deer, and the chital; and the Capreolinae, including the reindeer (caribou), the roe deer, the mule deer, and the moose. Female reindeer, and male deer of all species except the Chinese water deer, grow and shed new antlers each year. In this they differ from permanently horned antelope, which are part of a different family (Bovidae) within the same order of even-toed ungulates (Artiodactyla).</description>
+    <pawnKinds>
+      <li>Deer</li>
+      <li>Elk</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Panda</defName>
+    <label>pandas</label>
+    <description>The giant panda (Ailuropoda melanoleuca), also known as the panda bear or simply the panda, is a bear native to South Central China. It is characterised by its bold black-and-white coat and rotund body. The name "giant panda" is sometimes used to distinguish it from the red panda, a neighboring musteloid. Though it belongs to the order Carnivora, the giant panda is a folivore, with bamboo shoots and leaves making up more than 99% of its diet. Giant pandas in the wild will occasionally eat other grasses, wild tubers, or even meat in the form of birds, rodents, or carrion. In captivity, they may receive honey, eggs, fish, yams, shrub leaves, oranges, or bananas along with specially prepared food.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>RedPanda</defName>
+    <label>red pandas</label>
+    <description>The red panda (Ailurus fulgens) is a carnivoran native to the eastern Himalayas and southwestern China. It is listed as Endangered on the IUCN Red List because the wild population is estimated at fewer than 10,000 mature individuals and continues to decline due to habitat loss and fragmentation, poaching, and inbreeding depression. Despite its name, it is not closely related to the giant panda.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Gorilla</defName>
+    <label>gorillas</label>
+    <description>Gorillas are ground-dwelling, predominantly herbivorous great apes that inhabit the tropical forests of central Sub-Saharan Africa. The genus Gorilla is divided into two species: the eastern gorillas and the western gorillas, and either four or five subspecies. They are the largest living primates. The DNA of gorillas is highly similar to that of humans, from 95 to 99% depending on what is included, and they are the next closest living relatives to humans after chimpanzees and bonobos.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Monkey</defName>
+    <label>monkeys</label>
+    <description>Monkey is a common name that may refer to certain groups or species of simian mammals of infraorder Simiiformes. The term is applied descriptively to groups of primates, such as families of New World monkeys and Old World monkeys. Many monkey species are tree-dwelling (arboreal), although there are species that live primarily on the ground, such as baboons. Most species are mainly active during the day (diurnal). Monkeys are generally considered to be intelligent, especially the Old World monkeys of Catarrhini.</description>
+    <pawnKinds>
+      <li>Monkey</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>TasmanianDevil</defName>
+    <label>tasmanian devils</label>
+    <description>The Tasmanian devil (Sarcophilus harrisii) is a carnivorous marsupial of the family Dasyuridae. Until recently, it was only found on the island state of Tasmania, but it has now been reintroduced to New South Wales, with a small breeding population. The size of a small dog, the Tasmanian devil became the largest carnivorous marsupial in the world, following the extinction of the thylacine in 1936. It is related to quolls, and distantly related to the thylacine. It is characterised by its stocky and muscular build, black fur, pungent odour, extremely loud and disturbing screech, keen sense of smell, and ferocity when feeding. The Tasmanian devil's large head and neck allow it to generate among the strongest bites per unit body mass of any extant predatory land mammal. It hunts prey and scavenges on carrion.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Bear</defName>
+    <label>bears</label>
+    <description>Ursus is a genus in the family Ursidae (bears) that includes the widely distributed brown bear, the polar bear, the American black bear, and the Asian black bear. The name is derived from the Latin ursus, meaning bear.</description>
+    <pawnKinds>
+      <li>Bear_Grizzly</li>
+      <li>Bear_Polar</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Fisher</defName>
+    <label>fishers</label>
+    <description>The fisher (Pekania pennanti) is a small, carnivorous mammal native to North America. It is a member of the mustelid family (commonly referred to as the weasel family), and is in the monospecific genus Pekania. The fisher is closely related to, but larger than, the American marten (Martes americana). The fisher is a forest-dwelling creature whose range covers much of the boreal forest in Canada to the northern United States. Names derived from aboriginal languages include pekan, pequam, wejack, and woolang. It is sometimes misleadingly referred to as a fisher cat, although it is not a cat.</description>
+    <pawnKinds>
+      <!-- populated by ACP and Erin's critters -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Marten</defName>
+    <label>martens</label>
+    <description>The martens constitute the genus Martes within the subfamily Guloninae, in the family Mustelidae. They have bushy tails and large paws with partially retractile claws. The fur varies from yellowish to dark brown, depending on the species, and is valued by trappers for the fur trade. Martens are slender, agile animals, adapted to living in the taiga, and inhabit coniferous and northern deciduous forests across the Northern Hemisphere.</description>
+    <pawnKinds>
+      <!-- populated by Martens - Nature's Most Adorable Assassins -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Seal</defName>
+    <label>seals</label>
+    <description>The earless seals, phocids or true seals are one of the three main groups of mammals within the seal lineage, Pinnipedia. All true seals are members of the family Phocidae. They are sometimes called crawling seals to distinguish them from the fur seals and sea lions of the family Otariidae. Seals live in the oceans of both hemispheres and, with the exception of the more tropical monk seals, are mostly confined to polar, subpolar, and temperate climates. The Baikal seal is the only species of exclusively freshwater seal.</description>
+    <pawnKinds>
+      <!-- populated by VAE Ice Sheet and ACP -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Walrus</defName>
+    <label>walruses</label>
+    <description>The walrus (Odobenus rosmarus) is a large flippered marine mammal with a discontinuous distribution about the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere. The walrus is the only living species in the family Odobenidae and genus Odobenus. This species is subdivided into two subspecies: the Atlantic walrus (O. r. rosmarus), which lives in the Atlantic Ocean, and the Pacific walrus (O. r. divergens), which lives in the Pacific Ocean.</description>
+    <pawnKinds>
+      <!-- populated by VAE Ice Sheet and ACP -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Whale</defName>
+    <label>whales</label>
+    <description>Whales are a widely distributed and diverse group of fully aquatic placental marine mammals. They are an informal grouping within the infraorder Cetacea, usually excluding dolphins and porpoises. Whales, dolphins and porpoises belong to the order Cetartiodactyla, which consists of even-toed ungulates. Their closest living relatives are the hippopotamuses, having diverged about 40 million years ago. The two parvorders of whales, baleen whales (Mysticeti) and toothed whales (Odontoceti), are thought to have split apart around 34 million years ago. Whales consist of eight extant families: Balaenopteridae (the rorquals), Balaenidae (right whales), Cetotheriidae (the pygmy right whale), Eschrichtiidae (the grey whale), Monodontidae (belugas and narwhals), Physeteridae (the sperm whale), Kogiidae (the dwarf and pygmy sperm whale), and Ziphiidae (the beaked whales).</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+</Defs>

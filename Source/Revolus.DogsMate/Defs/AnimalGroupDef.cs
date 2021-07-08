@@ -9,7 +9,7 @@ namespace Revolus.DogsMate
     {
         private static IReadOnlyDictionary<PawnKindDef, IReadOnlyCollection<AnimalGroupDef>> _dict;
         public readonly bool canMate = true;
-        public readonly List<PawnKindDef> pawnKinds = new();
+        public readonly List<PawnKindDef> pawnKinds = new List<PawnKindDef>();
 
         private bool? _isUsable;
 

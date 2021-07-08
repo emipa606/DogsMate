@@ -49,7 +49,7 @@ namespace Revolus.DogsMate
             return false;
         }
 
-        public override string GetStatDrawEntryLabel(StatDef stat, float value, ToStringNumberSense numberSense,
+        public override string GetStatDrawEntryLabel(StatDef statDef, float value, ToStringNumberSense numberSense,
             StatRequest optionalReq, bool finalized = true)
         {
             if (TryGetHybridAnimals(optionalReq, out var animalDefs))
@@ -70,7 +70,7 @@ namespace Revolus.DogsMate
                     .Select(m => new Dialog_InfoCard.Hyperlink(m));
             }
 
-            return new Dialog_InfoCard.Hyperlink[0];
+            return Array.Empty<Dialog_InfoCard.Hyperlink>();
         }
 
         public override string GetExplanationUnfinalized(StatRequest req, ToStringNumberSense numberSense)

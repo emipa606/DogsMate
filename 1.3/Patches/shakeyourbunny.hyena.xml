@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SpottedHyena"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Hyena"]/pawnKinds</xpath>
+      <value>
+        <li>SpottedHyena</li>
+        <li>StripedHyena</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -36,13 +36,13 @@ namespace Revolus.DogsMate
         {
             if (AnimalGroupDef.TryGetGroups(req, out var group))
             {
-                return @group.Where(g => g.pawnKinds.Count >= 2).Select(g => g.pawnKinds).SelectMany(x => x)
+                return group.Where(g => g.pawnKinds.Count >= 2).Select(g => g.pawnKinds).SelectMany(x => x)
                     .Select(m => (Def) DefDatabase<ThingDef>.GetNamedSilentFail(m.defName) ?? m)
                     .OrderBy(x => x.label, StringComparer.InvariantCultureIgnoreCase)
                     .Select(m => new Dialog_InfoCard.Hyperlink(m));
             }
 
-            return new Dialog_InfoCard.Hyperlink[0];
+            return Array.Empty<Dialog_InfoCard.Hyperlink>();
         }
 
         public override float GetValueUnfinalized(StatRequest req, bool applyPostProcess = true)
@@ -56,7 +56,7 @@ namespace Revolus.DogsMate
                    groupDefs.Any(g => g.canMate && g.pawnKinds.Count >= 2);
         }
 
-        public override string GetStatDrawEntryLabel(StatDef stat, float value, ToStringNumberSense numberSense,
+        public override string GetStatDrawEntryLabel(StatDef statDef, float value, ToStringNumberSense numberSense,
             StatRequest optionalReq, bool finalized = true)
         {
             if (AnimalGroupDef.TryGetGroups(optionalReq, out var groups))
