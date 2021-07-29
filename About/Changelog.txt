@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.0.8.0 - Recompile since the beta-build did not work properly after the full release
+
+
 1.0.7.0 - Mod updated for 1.3 and passed autotests
 
 

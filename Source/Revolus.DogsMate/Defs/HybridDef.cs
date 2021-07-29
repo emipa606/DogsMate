@@ -5,17 +5,6 @@ using Verse;
 
 namespace Revolus.DogsMate
 {
-    public class HybridHediff
-    {
-        public BodyPartDef bodyPartDef;
-        public HediffDef hediffDef;
-        public SimpleCurve severityCurve;
-    }
-
-    public class AnimalFertilityReduced : HediffDef
-    {
-    }
-
     public class HybridDef : Def
     {
         private static IReadOnlyDictionary<AnimalGroupDef, IReadOnlyDictionary<AnimalGroupDef, IReadOnlyList<HybridDef>>
