@@ -24,7 +24,7 @@ Added support for
 - Vanilla Animals Expanded — Endangered
 - Tasmanian Devils
 - Jack Russell
-- Erin&apos;s Mountain Animals
+- Erin's Mountain Animals
 - Vanilla Animals Expanded — Temperate Forest
 - Hyena (continued)
 - BorderCollies!
@@ -51,7 +51,7 @@ Added support for
 - [HLX] ReGrowth - Mutated Animals Pack
 - Biomes! Bunnies
 - BeeGirl Race: RimBees Addon
-- Erin&apos;s Fox Squirrel
+- Erin's Fox Squirrel
 - Kyulen - NinetailFox
 - Sacred WhiteFox
 - Creatures of Goshen
@@ -87,7 +87,7 @@ There are so many different species of cat and dogs in this game and its mods. V
 
 But since when to dogs care about their care about the breed of their mate?
 
-**This mod makes it possible for different breeds of cats, dogs, bunnies, bears, foxes, wolves, hedgehogs, fishers, martens, horses, and platypusses to reproduce.** Half the litter will have the father&apos;s breed, half the mother&apos;s breed. Currently only viviparous animals can be patched, no egg-laying animals.
+**This mod makes it possible for different breeds of cats, dogs, bunnies, bears, foxes, wolves, hedgehogs, fishers, martens, horses, and platypusses to reproduce.** Half the litter will have the father's breed, half the mother's breed. Currently only viviparous animals can be patched, no egg-laying animals.
 
 Included are patches for: 
 
@@ -99,17 +99,17 @@ Included are patches for:
 - Vanilla Animals Expanded — Ice Sheet
 - Vanilla Animals Expanded — Tropical Rainforest
 - Vanilla Animals Expanded — Tundra
-- Let&apos;s Have a Cat!
-- Let&apos;s Have a Cat! - Version avoiding duplication with &quot;VAE — Cats and Dogs&quot;
-- Spidercamp&apos;s Dog Pack
-- Spidercamp&apos;s Horses
+- Let's Have a Cat!
+- Let's Have a Cat! - Version avoiding duplication with "VAE — Cats and Dogs"
+- Spidercamp's Dog Pack
+- Spidercamp's Horses
 - Shiba Wanko
 - RhodesianRidgebacks
 - Pomeranian
 - Red Wolves
-- Erin&apos;s Critter Collection
+- Erin's Critter Collection
 - FFGermanShepherd
-- Martens - Nature&apos;s Most Adorable Assassins
+- Martens - Nature's Most Adorable Assassins
 - SnowRats
 - FancyRats
 - Tropi[CKAPP] Rainforest Mod (Continued)
@@ -140,5 +140,6 @@ Intended purpose: Spende für Tierpark Neukölln
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 

@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.0.9.0 - Added support for 8 new mods
+
+
 1.0.8.0 - Recompile since the beta-build did not work properly after the full release
 
 
