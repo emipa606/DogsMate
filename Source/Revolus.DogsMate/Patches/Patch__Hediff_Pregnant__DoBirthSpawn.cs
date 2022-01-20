@@ -7,165 +7,164 @@ using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 
-namespace Revolus.DogsMate
-{
-    [HarmonyPatch(typeof(Hediff_Pregnant), nameof(Hediff_Pregnant.DoBirthSpawn), typeof(Pawn), typeof(Pawn))]
-    public class Patch__Hediff_Pregnant__DoBirthSpawn
-    {
-        private static int GetLitterCount(Pawn pawn)
-        {
-            var raceProps = pawn.RaceProps;
-            if (raceProps.litterSizeCurve is null)
-            {
-                return 1;
-            }
+namespace Revolus.DogsMate;
 
-            var n = Mathf.RoundToInt(Rand.ByCurve(pawn.RaceProps.litterSizeCurve));
-            return n > 1 ? n : 1;
+[HarmonyPatch(typeof(Hediff_Pregnant), nameof(Hediff_Pregnant.DoBirthSpawn), typeof(Pawn), typeof(Pawn))]
+public class Patch__Hediff_Pregnant__DoBirthSpawn
+{
+    private static int GetLitterCount(Pawn pawn)
+    {
+        var raceProps = pawn.RaceProps;
+        if (raceProps.litterSizeCurve is null)
+        {
+            return 1;
         }
 
-        [HarmonyPrefix]
-        public static bool Replace_DoBirthSpawn(Pawn mother, Pawn father)
+        var n = Mathf.RoundToInt(Rand.ByCurve(pawn.RaceProps.litterSizeCurve));
+        return n > 1 ? n : 1;
+    }
+
+    [HarmonyPrefix]
+    public static bool Replace_DoBirthSpawn(Pawn mother, Pawn father)
+    {
+        if (father is null || mother.kindDef == father.kindDef)
         {
-            if (father is null || mother.kindDef == father.kindDef)
+            return true;
+        }
+
+        var litterCount = Math.Min(GetLitterCount(mother), GetLitterCount(father));
+
+        List<(PawnKindDef p, List<HybridDef> h)> hybridKinds = null;
+        if (
+            DogsMateMod.TryGetCompatibleFemales(father.kindDef, out var dict) &&
+            dict.TryGetValue(mother.kindDef, out var hybridDefs) &&
+            hybridDefs.Count > 0
+        )
+        {
+            hybridKinds = hybridDefs.Select(h => h.children.Where(c => c.IsUsable).Select(a => (a, h)))
+                .SelectMany(x => x).Select(ah => ah.a.pawnKinds.Where(p => p != null).Select(p => (p, ah.h)))
+                .SelectMany(x => x).GroupBy(ph => ph.p)
+                .Select(g => (g.Key, g.Select(ph => ph.h).Where(h => h.IsUsable).ToList())).ToList();
+            DogsMateMod.Debug(
+                $"father=<{father.kindDef.ToStringSafe()}> " +
+                $"mother=<{mother.kindDef.ToStringSafe()}> " +
+                $"hybrids=<{hybridKinds.Select(ph => ph.p.label).ToCommaList()}>"
+            );
+        }
+
+        Pawn child = null;
+        for (var childIndex = 0; childIndex < litterCount; ++childIndex)
+        {
+            PawnKindDef childKind;
+            HybridDef hybridDef = null;
+            if (hybridKinds != null)
             {
-                return true;
+                hybridKinds.TryGetRandomElement(out var ph);
+                ph.h.TryGetRandomElement(out hybridDef);
+                childKind = ph.p;
+            }
+            else if (Rand.Value > 0.5f)
+            {
+                childKind = mother.kindDef;
+            }
+            else
+            {
+                childKind = father.kindDef;
             }
 
-            var litterCount = Math.Min(GetLitterCount(mother), GetLitterCount(father));
-
-            List<(PawnKindDef p, List<HybridDef> h)> hybridKinds = null;
-            if (
-                DogsMateMod.TryGetCompatibleFemales(father.kindDef, out var dict) &&
-                dict.TryGetValue(mother.kindDef, out var hybridDefs) &&
-                hybridDefs.Count > 0
-            )
+            bool newChildIsGood;
+            var newChild = PawnGenerator.GeneratePawn(new PawnGenerationRequest(
+                childKind,
+                mother.Faction,
+                forceGenerateNewPawn: false,
+                newborn: true
+            ));
+            if (PawnUtility.TrySpawnHatchedOrBornPawn(newChild, mother))
             {
-                hybridKinds = hybridDefs.Select(h => h.children.Where(c => c.IsUsable).Select(a => (a, h)))
-                    .SelectMany(x => x).Select(ah => ah.a.pawnKinds.Where(p => p != null).Select(p => (p, ah.h)))
-                    .SelectMany(x => x).GroupBy(ph => ph.p)
-                    .Select(g => (g.Key, g.Select(ph => ph.h).Where(h => h.IsUsable).ToList())).ToList();
-                DogsMateMod.Debug(
-                    $"father=<{father.kindDef.ToStringSafe()}> " +
-                    $"mother=<{mother.kindDef.ToStringSafe()}> " +
-                    $"hybrids=<{hybridKinds.Select(ph => ph.p.label).ToCommaList()}>"
-                );
-            }
-
-            Pawn child = null;
-            for (var childIndex = 0; childIndex < litterCount; ++childIndex)
-            {
-                PawnKindDef childKind;
-                HybridDef hybridDef = null;
-                if (hybridKinds != null)
+                if (newChild.playerSettings != null && mother.playerSettings != null)
                 {
-                    hybridKinds.TryGetRandomElement(out var ph);
-                    ph.h.TryGetRandomElement(out hybridDef);
-                    childKind = ph.p;
-                }
-                else if (Rand.Value > 0.5f)
-                {
-                    childKind = mother.kindDef;
-                }
-                else
-                {
-                    childKind = father.kindDef;
+                    newChild.playerSettings.AreaRestriction = mother.playerSettings.AreaRestriction;
                 }
 
-                bool newChildIsGood;
-                var newChild = PawnGenerator.GeneratePawn(new PawnGenerationRequest(
-                    childKind,
-                    mother.Faction,
-                    forceGenerateNewPawn: false,
-                    newborn: true
-                ));
-                if (PawnUtility.TrySpawnHatchedOrBornPawn(newChild, mother))
+                if (newChild.RaceProps.IsFlesh)
                 {
-                    if (newChild.playerSettings != null && mother.playerSettings != null)
+                    newChild.relations.AddDirectRelation(PawnRelationDefOf.Parent, mother);
+                    newChild.relations.AddDirectRelation(PawnRelationDefOf.Parent, father);
+                }
+
+                if (hybridDef != null)
+                {
+                    AddHediffs(newChild, hybridDef.childrenHediffs);
+                    switch (newChild.gender)
                     {
-                        newChild.playerSettings.AreaRestriction = mother.playerSettings.AreaRestriction;
+                        case Gender.Male:
+                            AddHediffs(newChild, hybridDef.maleChildrenHediffs);
+                            break;
+                        case Gender.Female:
+                            AddHediffs(newChild, hybridDef.femaleChildrenHediffs);
+                            break;
                     }
-
-                    if (newChild.RaceProps.IsFlesh)
-                    {
-                        newChild.relations.AddDirectRelation(PawnRelationDefOf.Parent, mother);
-                        newChild.relations.AddDirectRelation(PawnRelationDefOf.Parent, father);
-                    }
-
-                    if (hybridDef != null)
-                    {
-                        AddHediffs(newChild, hybridDef.childrenHediffs);
-                        switch (newChild.gender)
-                        {
-                            case Gender.Male:
-                                AddHediffs(newChild, hybridDef.maleChildrenHediffs);
-                                break;
-                            case Gender.Female:
-                                AddHediffs(newChild, hybridDef.femaleChildrenHediffs);
-                                break;
-                        }
-                    }
-
-                    newChildIsGood = true;
-                }
-                else
-                {
-                    Find.WorldPawns.PassToWorld(newChild, PawnDiscardDecideMode.Discard);
-                    newChildIsGood = false;
                 }
 
-                TaleRecorder.RecordTale(TaleDefOf.GaveBirth, mother, newChild);
-
-                if (newChildIsGood)
-                {
-                    child = newChild;
-                }
+                newChildIsGood = true;
             }
-
-            if (!mother.Spawned)
+            else
             {
-                return false;
+                Find.WorldPawns.PassToWorld(newChild, PawnDiscardDecideMode.Discard);
+                newChildIsGood = false;
             }
 
-            FilthMaker.TryMakeFilth(mother.Position, mother.Map, ThingDefOf.Filth_AmnioticFluid,
-                mother.LabelIndefinite(), 5);
-            mother.caller?.DoCall();
-            child?.caller?.DoCall();
+            TaleRecorder.RecordTale(TaleDefOf.GaveBirth, mother, newChild);
 
+            if (newChildIsGood)
+            {
+                child = newChild;
+            }
+        }
+
+        if (!mother.Spawned)
+        {
             return false;
         }
 
-        private static void AddHediffs(Pawn newChild, List<HybridHediff> list)
-        {
-            if (list is null)
-            {
-                return;
-            }
+        FilthMaker.TryMakeFilth(mother.Position, mother.Map, ThingDefOf.Filth_AmnioticFluid,
+            mother.LabelIndefinite(), 5);
+        mother.caller?.DoCall();
+        child?.caller?.DoCall();
 
-            foreach (var h in list)
+        return false;
+    }
+
+    private static void AddHediffs(Pawn newChild, List<HybridHediff> list)
+    {
+        if (list is null)
+        {
+            return;
+        }
+
+        foreach (var h in list)
+        {
+            BodyPartRecord bodyPart = null;
+            if (h.bodyPartDef != null)
             {
-                BodyPartRecord bodyPart = null;
-                if (h.bodyPartDef != null)
+                foreach (var p in newChild.health.hediffSet.GetNotMissingParts())
                 {
-                    foreach (var p in newChild.health.hediffSet.GetNotMissingParts())
+                    if (p.def == h.bodyPartDef)
                     {
-                        if (p.def == h.bodyPartDef)
-                        {
-                            bodyPart = p;
-                        }
+                        bodyPart = p;
                     }
                 }
+            }
 
-                var hediff = HediffMaker.MakeHediff(h.hediffDef, newChild, bodyPart);
-                if (h.severityCurve.TryGetRandomValue(out var severity))
-                {
-                    hediff.Severity = severity;
-                }
+            var hediff = HediffMaker.MakeHediff(h.hediffDef, newChild, bodyPart);
+            if (h.severityCurve.TryGetRandomValue(out var severity))
+            {
+                hediff.Severity = severity;
+            }
 
-                if (hediff.Severity > 0f)
-                {
-                    newChild.health.AddHediff(hediff);
-                }
+            if (hediff.Severity > 0f)
+            {
+                newChild.health.AddHediff(hediff);
             }
         }
     }

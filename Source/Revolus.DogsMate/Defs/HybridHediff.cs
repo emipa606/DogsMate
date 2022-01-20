@@ -1,11 +1,10 @@
 ﻿using Verse;
 
-namespace Revolus.DogsMate
+namespace Revolus.DogsMate;
+
+public class HybridHediff
 {
-    public class HybridHediff
-    {
-        public BodyPartDef bodyPartDef;
-        public HediffDef hediffDef;
-        public SimpleCurve severityCurve;
-    }
+    public BodyPartDef bodyPartDef;
+    public HediffDef hediffDef;
+    public SimpleCurve severityCurve;
 }

@@ -1,8 +1,7 @@
 ﻿using Verse;
 
-namespace Revolus.DogsMate
+namespace Revolus.DogsMate;
+
+public class AnimalFertilityReduced : HediffDef
 {
-    public class AnimalFertilityReduced : HediffDef
-    {
-    }
 }

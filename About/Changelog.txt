@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.3.1 - Opened the strings for translation, cleaned up the code a bit
+
+
 1.0.9.0 - Added support for 8 new mods
 
 

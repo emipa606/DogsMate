@@ -1,6 +1,6 @@
 # DogsMate
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Revoluss mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2109362835
@@ -64,22 +64,21 @@ Added support for
 - [RF]秦爽天动物 - QYT animals
 - 【AF】SydailyFox
 - FFSmilodonPopulator
+- Weaponized Husbandry
+- Erin's Palamutes
+- Vanilla Animals Expanded — Caves
+- Medieval Overhaul
+- More cow
+- Biomes! Chromatic Oasis
+- Meerkats
+- Devilstrand Animals
 
 
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-    [tr]
-        [td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-        [td]https://github.com/emipa606/DogsMate]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-    [/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 # Different breeds of cats and dogs can reproduce
 
@@ -130,7 +129,7 @@ BIC: BFSWDE33BER
 IBAN: DE 78 100 205 00000 316 5900
 Intended purpose: Spende für Tierpark Neukölln
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 

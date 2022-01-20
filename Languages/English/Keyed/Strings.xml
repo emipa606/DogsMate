@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DM.debug>Show debug messages</DM.debug>
+  <DM.debugdev>Show debug messages if dev mode is enabled</DM.debugdev>
+  <DM.modversion>Installed mod-version: {0}</DM.modversion>
+</LanguageData>
