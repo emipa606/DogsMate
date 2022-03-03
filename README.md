@@ -72,6 +72,8 @@ Added support for
 - Biomes! Chromatic Oasis
 - Meerkats
 - Devilstrand Animals
+- The Tuffalo
+- [TP]Noobert's Fox Overhaul
 
 
 

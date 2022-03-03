@@ -71,4 +71,19 @@
       </value>
     </match>
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BerkshirePig"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Pig"]/pawnKinds</xpath>
+      <value>
+        <li>BerkshirePig</li>
+        <li>DairyPig</li>
+        <li>DurocPig</li>
+        <li>GloucestershirePig</li>
+        <li>SaddlebackPig</li>
+        <li>WoolyPig</li>
+      </value>
+    </match>
+  </Operation>
 </Patch>
