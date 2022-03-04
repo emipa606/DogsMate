@@ -278,4 +278,11 @@
     <pawnKinds>
     </pawnKinds>
   </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Opossum</defName>
+    <label>opossums</label>
+    <description>Opossums are members of the marsupial order Didelphimorphia endemic to the Americas. The largest order of marsupials in the Western Hemisphere, it comprises 120+ species in 19 genera. Opossums originated in South America and entered North America in the Great American Interchange following the connection of North and South America.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
 </Defs>

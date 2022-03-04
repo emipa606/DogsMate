@@ -30,9 +30,9 @@ Added support for
 - BorderCollies!
 - Megafauna!
 - Bigfoot (Continued)
-- Lord of the Rims - Elves (Continued)
-- Lord of the Rims - Dwarves (Continued)
-- Call of Cthulhu - Cults (Continued)
+- Lord of the Rims - Elves
+- Lord of the Rims - Dwarves
+- Call of Cthulhu - Cults
 - RimStarve (Continued)
 - Spider Goat (Continued)
 - Biomes! Islands
@@ -74,6 +74,10 @@ Added support for
 - Devilstrand Animals
 - The Tuffalo
 - [TP]Noobert's Fox Overhaul
+- Erin's Great Pyrenean Mountain Dogs
+- No Gimmicks, Just Tortie
+- ReGrowth Remastered: Extinct Animals
+- Dumbs' Dachshunds
 
 
 
