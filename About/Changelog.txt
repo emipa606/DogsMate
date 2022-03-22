@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.3.7 - Added support for Beasts of the Rim
+
+
 1.3.6 - Added support for Opossum Friends and American Possum
 
 

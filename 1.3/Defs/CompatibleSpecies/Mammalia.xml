@@ -285,4 +285,18 @@
     <pawnKinds>
     </pawnKinds>
   </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Tanay</defName>
+    <label>tanays</label>
+    <description>Tanay are large herbivores engineered to produce large anmounts of neutroamine.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Leviathan</defName>
+    <label>leviathans</label>
+    <description>Leviathans are giant predatores found in the coldest biomes of the planets.Leviathans are extremely strong and good wool producers but not easy to tame. Different leviathan subspecies live in the jungle and the arid biomes.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
 </Defs>

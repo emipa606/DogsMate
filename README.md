@@ -78,6 +78,8 @@ Added support for
 - No Gimmicks, Just Tortie
 - ReGrowth Remastered: Extinct Animals
 - Dumbs' Dachshunds
+- Opossum Friends
+- American Possum
 
 
 
