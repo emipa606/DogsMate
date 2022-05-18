@@ -121,6 +121,7 @@ Included are patches for:
 - FancyRats
 - Tropi[CKAPP] Rainforest Mod (Continued)
 - Dire Wolf
+- Beasts of the Rim
 
 
 
@@ -147,6 +148,7 @@ Intended purpose: Spende für Tierpark Neukölln
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

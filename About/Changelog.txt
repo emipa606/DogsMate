@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.3.8 - Added support for Unique Canids Remake
+
+
 1.3.7 - Added support for Beasts of the Rim
 
 
