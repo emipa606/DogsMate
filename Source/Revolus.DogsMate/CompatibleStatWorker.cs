@@ -14,7 +14,7 @@ public class CompatibleStatWorker : StatWorker
         if (AnimalGroupDef.TryGetGroups(req, out var groups))
         {
             return string.Join("\n\n",
-                groups.Where(g => g.canMate && g.pawnKinds.Count >= 2 && !g.description.NullOrEmpty())
+                groups.Where(g => g.canMate && g.FoundPawnKinds.Count >= 2 && !g.description.NullOrEmpty())
                     .OrderBy(g => g.label, StringComparer.InvariantCultureIgnoreCase).Select(g => g.description));
         }
 
@@ -25,7 +25,7 @@ public class CompatibleStatWorker : StatWorker
     {
         if (AnimalGroupDef.TryGetGroups(req, out var groups))
         {
-            return groups.Where(g => g.pawnKinds.Count >= 2).Select(m => (string)m.LabelCap)
+            return groups.Where(g => g.FoundPawnKinds.Count >= 2).Select(m => (string)m.LabelCap)
                 .OrderBy(m => m, StringComparer.InvariantCultureIgnoreCase).ToCommaList(true);
         }
 
@@ -36,7 +36,7 @@ public class CompatibleStatWorker : StatWorker
     {
         if (AnimalGroupDef.TryGetGroups(req, out var group))
         {
-            return group.Where(g => g.pawnKinds.Count >= 2).Select(g => g.pawnKinds).SelectMany(x => x)
+            return group.Where(g => g.FoundPawnKinds.Count >= 2).Select(g => g.FoundPawnKinds).SelectMany(x => x)
                 .Select(m => (Def)DefDatabase<ThingDef>.GetNamedSilentFail(m.defName) ?? m)
                 .OrderBy(x => x.label, StringComparer.InvariantCultureIgnoreCase)
                 .Select(m => new Dialog_InfoCard.Hyperlink(m));
@@ -53,7 +53,7 @@ public class CompatibleStatWorker : StatWorker
     public override bool ShouldShowFor(StatRequest req)
     {
         return AnimalGroupDef.TryGetGroups(req, out var groupDefs) &&
-               groupDefs.Any(g => g.canMate && g.pawnKinds.Count >= 2);
+               groupDefs.Any(g => g.canMate && g.FoundPawnKinds.Count >= 2);
     }
 
     public override string GetStatDrawEntryLabel(StatDef statDef, float value, ToStringNumberSense numberSense,
@@ -61,7 +61,7 @@ public class CompatibleStatWorker : StatWorker
     {
         if (AnimalGroupDef.TryGetGroups(optionalReq, out var groups))
         {
-            return groups.Where(g => g.canMate && g.pawnKinds.Count >= 2).Select(g => (string)g.LabelCap)
+            return groups.Where(g => g.canMate && g.FoundPawnKinds.Count >= 2).Select(g => (string)g.LabelCap)
                 .ToCommaList();
         }
 

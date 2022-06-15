@@ -42,7 +42,7 @@ public class Patch__Hediff_Pregnant__DoBirthSpawn
         )
         {
             hybridKinds = hybridDefs.Select(h => h.children.Where(c => c.IsUsable).Select(a => (a, h)))
-                .SelectMany(x => x).Select(ah => ah.a.pawnKinds.Where(p => p != null).Select(p => (p, ah.h)))
+                .SelectMany(x => x).Select(ah => ah.a.FoundPawnKinds.Where(p => p != null).Select(p => (p, ah.h)))
                 .SelectMany(x => x).GroupBy(ph => ph.p)
                 .Select(g => (g.Key, g.Select(ph => ph.h).Where(h => h.IsUsable).ToList())).ToList();
             DogsMateMod.Debug(

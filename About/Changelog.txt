@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.3.9 - Should now no longer throw errors if a defined pawnKind cannot be found. Will just use the ones loaded at game-start instead.
+
+
 1.3.8 - Added support for Unique Canids Remake
 
 

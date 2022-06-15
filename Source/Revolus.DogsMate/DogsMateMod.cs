@@ -104,7 +104,7 @@ public class DogsMateMod : Mod
         // explicitly stated to be compatible
         if (AnimalGroupDef.TryGetGroups(malePawnKindDef, out var sameGroupList))
         {
-            var s = sameGroupList.Where(g => g.canMate).Select(g => g.pawnKinds).SelectMany(x => x)
+            var s = sameGroupList.Where(g => g.canMate).Select(g => g.FoundPawnKinds).SelectMany(x => x)
                 .Where(p => p != malePawnKindDef);
             foreach (var femalePawnKindDef in s)
             {
@@ -131,7 +131,7 @@ public class DogsMateMod : Mod
         if (HybridDef.TryGetHybrids(malePawnKindDef, out var hybridDict))
         {
             var s = hybridDict.Select(kv =>
-                    kv.Key.pawnKinds.Where(p => p != null && p != malePawnKindDef).Select(p => (p, kv.Value)))
+                    kv.Key.FoundPawnKinds.Where(p => p != null && p != malePawnKindDef).Select(p => (p, kv.Value)))
                 .SelectMany(kv => kv);
             foreach (var (femalePawnKindDef, hybridDefs) in s)
             {

@@ -80,6 +80,7 @@ Added support for
 - Dumbs' Dachshunds
 - Opossum Friends
 - American Possum
+- Unique Canids Remake
 
 
 

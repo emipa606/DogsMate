@@ -9,15 +9,42 @@ public class AnimalGroupDef : Def
 {
     private static IReadOnlyDictionary<PawnKindDef, IReadOnlyCollection<AnimalGroupDef>> _dict;
     public readonly bool canMate = true;
-    public readonly List<PawnKindDef> pawnKinds = new List<PawnKindDef>();
+    public readonly List<string> pawnKinds = new List<string>();
 
     private bool? _isUsable;
+
+    private List<PawnKindDef> foundPawnKinds;
+
+    public List<PawnKindDef> FoundPawnKinds
+    {
+        get
+        {
+            if (foundPawnKinds != null)
+            {
+                return foundPawnKinds;
+            }
+
+            foundPawnKinds = new List<PawnKindDef>();
+            foreach (var pawnKind in pawnKinds)
+            {
+                var kindFound = DefDatabase<PawnKindDef>.GetNamedSilentFail(pawnKind);
+                if (kindFound == null)
+                {
+                    continue;
+                }
+
+                foundPawnKinds.Add(kindFound);
+            }
+
+            return foundPawnKinds;
+        }
+    }
 
     public bool IsUsable
     {
         get
         {
-            _isUsable ??= pawnKinds != null && pawnKinds.Any(p => p != null);
+            _isUsable ??= FoundPawnKinds != null && FoundPawnKinds.Any(p => p != null);
             return _isUsable.Value;
         }
     }
@@ -29,7 +56,7 @@ public class AnimalGroupDef : Def
             if (_dict is null)
             {
                 _dict = DefDatabase<AnimalGroupDef>.AllDefsListForReading.Where(def => def.IsUsable)
-                    .Select(def => def.pawnKinds.Where(p => p != null).Select(pawnKind => (pawnKind, def)))
+                    .Select(def => def.FoundPawnKinds.Where(p => p != null).Select(pawnKind => (pawnKind, def)))
                     .SelectMany(kv => kv).GroupBy(kv => kv.pawnKind).ToDictionary(
                         g => g.Key,
                         g => g.Select(x => x.def).Distinct().ToArray().AsReadOnlyArray()

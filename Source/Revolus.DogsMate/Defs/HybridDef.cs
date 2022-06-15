@@ -66,10 +66,10 @@ public class HybridDef : Def
             {
                 _hybridParents = DefDatabase<HybridDef>.AllDefsListForReading.Where(h => h != null)
                     .Select(h =>
-                        h.children.Where(a => a.IsUsable).Select(a => a.pawnKinds.Where(c => c != null))
+                        h.children.Where(a => a.IsUsable).Select(a => a.FoundPawnKinds.Where(c => c != null))
                             .SelectMany(x => x).Select(c => (c, a: h.parents.Where(a => a.IsUsable))))
                     .SelectMany(x => x).GroupBy(kv => kv.c).ToDictionary(g => g.Key,
-                        g => g.Select(x => x.a).SelectMany(a => a).Select(a => a.pawnKinds.Where(p => p != null))
+                        g => g.Select(x => x.a).SelectMany(a => a).Select(a => a.FoundPawnKinds.Where(p => p != null))
                             .SelectMany(p => p).Distinct().ToList().AsReadOnlyList());
             }
 

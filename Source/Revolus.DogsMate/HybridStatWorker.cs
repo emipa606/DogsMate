@@ -64,7 +64,7 @@ public class HybridStatWorker : StatWorker
     {
         if (TryGetHybridAnimals(req, out var animalDefs))
         {
-            return animalDefs.Select(a => a.pawnKinds.Where(p => p != null)).SelectMany(x => x)
+            return animalDefs.Select(a => a.FoundPawnKinds.Where(p => p != null)).SelectMany(x => x)
                 .Select(m => (Def)DefDatabase<ThingDef>.GetNamedSilentFail(m.defName) ?? m)
                 .OrderBy(x => x.label, StringComparer.InvariantCultureIgnoreCase)
                 .Select(m => new Dialog_InfoCard.Hyperlink(m));
