@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Medieval Overhaul</li>
-    </mods>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DankPyon_Direwolf"]</xpath>
+    <success>Always</success>
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">
@@ -22,6 +21,22 @@
           <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Bison"]/pawnKinds</xpath>
           <value>
             <li>DankPyon_Rox</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Pig"]/pawnKinds</xpath>
+          <value>
+            <li>DankPyon_Hampshire</li>
+            <li>DankPyon_Gloucestershire</li>
+            <li>DankPyon_NorthernBoar</li>
+            <li>DankPyon_DireBoar</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cow"]/pawnKinds</xpath>
+          <value>
+            <li>DankPyon_Ravelder</li>
+            <li>DankPyon_Angus</li>
           </value>
         </li>
       </operations>
