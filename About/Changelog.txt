@@ -1,5 +1,9 @@
 # Changelog for DogsMate
 
+1.4.1 - Mod updated for 1.4 and passed autotests.
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.3.10 - Added support for Domestic Thrumbo, more animals in Medieval Overhaul, Alpha Animals and Foxbold Race
 
 

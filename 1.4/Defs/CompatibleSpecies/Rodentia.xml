@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>GuineaPig</defName>
+    <label>guinea pigs</label>
+    <description>Cavia is a genus in the subfamily Caviinae that contains the rodents commonly known as guinea pigs or cavies. The best-known species in this genus is the domestic guinea pig, Cavia porcellus, an important meat animal in South America and a common household pet outside South America.</description>
+    <pawnKinds>
+      <li>GuineaPig</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Hare</defName>
+    <label>hares</label>
+    <description>Hares and jackrabbits are leporids belonging to the genus Lepus. Hares are classified in the same family as rabbits. They are similar in size and form to rabbits and have similar herbivorous diets, but generally have longer ears and live solitarily or in pairs. Also unlike rabbits, their young are able to fend for themselves shortly after birth rather than emerging blind and helpless. Most are fast runners. Hare species are native to Africa, Eurasia and North America.</description>
+    <pawnKinds>
+      <li>Hare</li>
+      <li>Snowhare</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Porcupine</defName>
+    <label>porcupines</label>
+    <description>Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators. The term covers two families of animals: the Old World porcupines of family Hystricidae, and the New World porcupines of family Erethizontidae. Both families belong to the infraorder Hystricognathi within the profoundly diverse order Rodentia and display superficially similar coats of quills: despite this, the two groups are distinct from each other and are not closely related to each other within the Hystricognathi.</description>
+    <pawnKinds>
+      <!-- populated by VAE Tundra and ACP -->
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Ferret</defName>
+    <label>ferrets</label>
+    <description>The ferret (Mustela putorius furo) is the domesticated form of the European polecat, a mammal belonging to the same genus as the weasel, Mustela, in the family Mustelidae. Their fur is typically brown, black, white, or mixed. They have an average length of 51 cm (20 in), including a 13 cm (5.1 in) tail, weigh about between 0.7 and 2.0 kg (1.5 and 4.4 lb), and have a natural lifespan of 7 to 10 years. Ferrets are sexually dimorphic predators, with males being substantially larger than females.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Weasel</defName>
+    <label>weasels</label>
+    <description>A weasel /ˈwiːzəl/ is a mammal of the genus Mustela of the family Mustelidae. The genus Mustela includes the least weasels, polecats, stoats, ferrets and mink. Members of this genus are small, active predators, with long and slender bodies and short legs. The family Mustelidae, or mustelids, (which also includes badgers, otters, and wolverines) is often referred to as the "weasel family". In the UK, the term "weasel" usually refers to the smallest species, the least weasel (M. nivalis), the smallest carnivoran species.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Squirrel</defName>
+    <label>squirrels</label>
+    <description>Squirrels are members of the family Sciuridae, a family that includes small or medium-size rodents. The squirrel family includes tree squirrels, ground squirrels, chipmunks, marmots (including groundhogs), flying squirrels, and prairie dogs amongst other rodents. Squirrels are indigenous to the Americas, Eurasia, and Africa, and were introduced by humans to Australia. The earliest known fossilized squirrels date from the Eocene epoch, and among other living rodent families, the squirrels are most closely related to the mountain beaver and to the dormice.</description>
+    <pawnKinds>
+      <li>Squirrel</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Rat</defName>
+    <label>rats</label>
+    <description>Rats are various medium-sized, long-tailed rodents. Species of rats are found throughout the order Rodentia, but stereotypical rats are found in the genus Rattus. Other rat genera include Neotoma (pack rats), Bandicota (bandicoot rats) and Dipodomys (kangaroo rats).</description>
+    <pawnKinds>
+      <li>Rat</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Beaver</defName>
+    <label>beaver</label>
+    <description>Beavers are large, semiaquatic rodents native to the temperate Northern Hemisphere. There are two extant species in the genus Castor, the North American beaver (Castor canadensis) and the Eurasian beaver (C. fiber). Beavers are the second-largest living rodents after the capybaras. They have stout bodies with large heads, long chisel-like incisors, brown or gray fur, hand-like front feet, webbed back feet and flat, scaly tails. The Eurasian beaver has a more elongated skull with a more triangular nasal bone opening, lighter fur color and a narrower tail. The animals can be found in a number of freshwater habitats, such as rivers, streams, lakes and ponds. They are herbivorous, consuming tree bark, aquatic plants, grasses and sedges.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Capybara</defName>
+    <label>capybaras</label>
+    <description>The capybara (Hydrochoerus hydrochaeris) is a giant cavy rodent native to South America. It is the largest living rodent in the world. Also called capivara (in Brazil), capiguara (in Bolivia), chigüire, chigüiro, or fercho (in Colombia and Venezuela), carpincho (in Argentina, Paraguay and Uruguay) and ronsoco (in Peru), it is a member of the genus Hydrochoerus, of which the only other extant member is the lesser capybara (Hydrochoerus isthmius). Its close relatives include guinea pigs and rock cavies, and it is more distantly related to the agouti, the chinchilla, and the coypu. The capybara inhabits savannas and dense forests and lives near bodies of water. It is a highly social species and can be found in groups as large as 100 individuals, but usually lives in groups of 10–20 individuals. The capybara is not a threatened species, but it is hunted for its meat and hide and also for grease from its thick fatty skin.</description>
+    <pawnKinds>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+</Defs>

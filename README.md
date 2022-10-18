@@ -81,6 +81,9 @@ Added support for
 - Opossum Friends
 - American Possum
 - Unique Canids Remake
+- Foxbold Race
+- Alpha Animals
+- Domestic Thrumbo
 
 
 

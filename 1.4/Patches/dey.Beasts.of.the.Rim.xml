@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AlienMonkey"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Monkey"]/pawnKinds</xpath>
+      <value>
+        <li>AlienMonkey</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AncientBull"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Bison"]/pawnKinds</xpath>
+      <value>
+        <li>AncientBull</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BarrelBoar"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Pig"]/pawnKinds</xpath>
+      <value>
+        <li>BarrelBoar</li>
+        <li>SuperHog</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GlitterworldCat"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cat"]/pawnKinds</xpath>
+      <value>
+        <li>GlitterworldCat</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ColoredRetriever"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
+      <value>
+        <li>ColoredRetriever</li>
+        <li>WhiteFluffyTerrier</li>
+        <li>IronFang</li>
+        <li>Koncrill</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SandTanay"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Tanay"]/pawnKinds</xpath>
+      <value>
+        <li>SandTanay</li>
+        <li>SnowTanay</li>
+        <li>SwampTanay</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SumpfBock"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Antelope"]/pawnKinds</xpath>
+      <value>
+        <li>SumpfBock</li>
+        <li>MondBock</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="PlainLeviathan"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Leviathan"]/pawnKinds</xpath>
+      <value>
+        <li>PlainLeviathan</li>
+        <li>JungleLeviathan</li>
+        <li>Leviathan</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GroundRat"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Rat"]/pawnKinds</xpath>
+      <value>
+        <li>GroundRat</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Gorrock"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cow"]/pawnKinds</xpath>
+      <value>
+        <li>Gorrock</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SavageEsel"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Donkey"]/pawnKinds</xpath>
+      <value>
+        <li>SavageEsel</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HeartHornedIbex"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Goat"]/pawnKinds</xpath>
+      <value>
+        <li>HeartHornedIbex</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

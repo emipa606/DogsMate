@@ -116,7 +116,7 @@ public class HybridDef : Def
     {
         if (kindToHybrids.TryGetValue(kindDef, out hybrids))
         {
-            return hybrids != null && hybrids.Count > 0;
+            return hybrids is { Count: > 0 };
         }
 
         if (AnimalGroupDef.TryGetGroups(kindDef, out var groups))
@@ -128,7 +128,7 @@ public class HybridDef : Def
         }
 
         kindToHybrids.Add(kindDef, hybrids);
-        return hybrids != null && hybrids.Count > 0;
+        return hybrids is { Count: > 0 };
     }
 
     private static bool TryGetHybrids(ThingDef thingDef,

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Beefalo"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Bison"]/pawnKinds</xpath>
+      <value>
+        <li>Beefalo</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VoltGoat"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Goat"]/pawnKinds</xpath>
+      <value>
+        <li>VoltGoat</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Rabbit"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Hare"]/pawnKinds</xpath>
+      <value>
+        <li>Rabbit</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Hound"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Warg"]/pawnKinds</xpath>
+      <value>
+        <li>Hound</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

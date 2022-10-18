@@ -52,12 +52,9 @@ public class HybridStatWorker : StatWorker
     public override string GetStatDrawEntryLabel(StatDef statDef, float value, ToStringNumberSense numberSense,
         StatRequest optionalReq, bool finalized = true)
     {
-        if (TryGetHybridAnimals(optionalReq, out var animalDefs))
-        {
-            return animalDefs.Select(h => (string)h.LabelCap).ToCommaList();
-        }
-
-        return "";
+        return TryGetHybridAnimals(optionalReq, out var animalDefs)
+            ? animalDefs.Select(h => (string)h.LabelCap).ToCommaList()
+            : "";
     }
 
     public override IEnumerable<Dialog_InfoCard.Hyperlink> GetInfoCardHyperlinks(StatRequest req)
@@ -81,12 +78,9 @@ public class HybridStatWorker : StatWorker
             {
                 var children = h.children.Where(c => c.IsUsable)
                     .OrderBy(c => c.label, StringComparer.InvariantCultureIgnoreCase).ToList();
-                if (children.Count == 1)
-                {
-                    return $"…+{h.label}={children[0].label}";
-                }
-
-                return $"…+{h.label}={string.Join("|", children.Select(c => c.label))}";
+                return children.Count == 1
+                    ? $"…+{h.label}={children[0].label}"
+                    : $"…+{h.label}={string.Join("|", children.Select(c => c.label))}";
             }).OrderBy(x => x, StringComparer.InvariantCultureIgnoreCase).ToCommaList(true);
         }
 

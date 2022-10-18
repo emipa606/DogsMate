@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AngusCow"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cow"]/pawnKinds</xpath>
+      <value>
+        <li>AngusCow</li>
+        <li>AnkoleWatusiCow</li>
+        <li>BoomooCow</li>
+        <li>BrahmanCow</li>
+        <li>BravaCow</li>
+        <li>BrownSwissCow</li>
+        <li>HarianaCow</li>
+        <li>HerefordCow</li>
+        <li>HighlandCow</li>
+        <li>HolsteinFriesianCow</li>
+        <li>JerseyCow</li>
+        <li>LimousinCow</li>
+        <li>LonghornCow</li>
+        <li>ZebuCow</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AssafSheep"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Sheep"]/pawnKinds</xpath>
+      <value>
+        <li>AssafSheep</li>
+        <li>AwassiSheep</li>
+        <li>BighornSheep</li>
+        <li>BorderLeicesterSheep</li>
+        <li>JacobsSheep</li>
+        <li>LincolnSheep</li>
+        <li>MerinoSheep</li>
+        <li>MouflonSheep</li>
+        <li>SuffolkSheep</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Badger"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Badger"]/pawnKinds</xpath>
+      <value>
+        <li>Badger</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="IndianGiantSquirrel"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Squirrel"]/pawnKinds</xpath>
+      <value>
+        <li>IndianGiantSquirrel</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Gerbil"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Rat"]/pawnKinds</xpath>
+      <value>
+        <li>Gerbil</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BerkshirePig"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Pig"]/pawnKinds</xpath>
+      <value>
+        <li>BerkshirePig</li>
+        <li>DairyPig</li>
+        <li>DurocPig</li>
+        <li>GloucestershirePig</li>
+        <li>SaddlebackPig</li>
+        <li>WoolyPig</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

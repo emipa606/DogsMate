@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG-WF_WastelandDeer"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Deer"]/pawnKinds</xpath>
+      <value>
+        <li>RG-WF_WastelandDeer</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG-WF_WastelandSquirrel"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Squirrel"]/pawnKinds</xpath>
+      <value>
+        <li>RG-WF_WastelandSquirrel</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG-WF_WastelandBeaver"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Beaver"]/pawnKinds</xpath>
+      <value>
+        <li>RG-WF_WastelandBeaver</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG-WF_WastelandBear"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Bear"]/pawnKinds</xpath>
+      <value>
+        <li>RG-WF_WastelandBear</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

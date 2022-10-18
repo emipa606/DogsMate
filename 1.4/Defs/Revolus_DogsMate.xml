@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StatDef>
+    <defName>Revolus_DogsMate_CompatibleStat</defName>
+    <label>Can mate with</label>
+    <description>This animal can reproduce with other races of its own species, and/or closely related species.</description>
+    <category>BasicsNonPawnImportant</category>
+    <showNonAbstract>true</showNonAbstract>
+    <showOnPawns>false</showOnPawns>
+    <workerClass>Revolus.DogsMate.CompatibleStatWorker</workerClass>
+  </StatDef>
+  <StatDef>
+    <defName>Revolus_DogsMate_HybridStat</defName>
+    <label>Can produce hybrids</label>
+    <description>This animal can reproduce with hybrid animals with other closely related species.</description>
+    <category>BasicsNonPawnImportant</category>
+    <showNonAbstract>true</showNonAbstract>
+    <showOnPawns>false</showOnPawns>
+    <workerClass>Revolus.DogsMate.HybridStatWorker</workerClass>
+  </StatDef>
+  <HediffDef Class="Revolus.DogsMate.AnimalFertilityReduced">
+    <!--
+            https://www.wolframalpha.com/input/?i=f%28x%2Cy%29+%3D+sqrt%28%281-x%29+*+%281-y%29+*+%281+-+max%28x%2C+y%29%29%29+plot+x+in+%5B0%2C1%5D
+			95% severity and 95% severity:  1% fertility
+            95% severity and  0% severity:  5% fertility
+            50% severity and 50% severity: 35% fertility
+             5% severity and  5% severity: 93% fertility
+		-->
+    <defName>Revolus_DogsMate_Hybrid</defName>
+    <label>reduced fertility (hybrid)</label>
+    <description>This animal has a reduced fertility. This is a common occurrence in hybrid animals.</description>
+    <initialSeverity>0.01</initialSeverity>
+    <minSeverity>0.00</minSeverity>
+    <maxSeverity>1.00</maxSeverity>
+    <makesAlert>False</makesAlert>
+    <everCurableByItem>False</everCurableByItem>
+    <chronic>True</chronic>
+    <injuryProps>
+      <painPerSeverity>0</painPerSeverity>
+      <averagePainPerSeverityPermanent>0</averagePainPerSeverityPermanent>
+    </injuryProps>
+  </HediffDef>
+</Defs>
