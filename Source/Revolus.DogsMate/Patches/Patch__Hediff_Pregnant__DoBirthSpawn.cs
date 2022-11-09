@@ -76,7 +76,8 @@ public class Patch__Hediff_Pregnant__DoBirthSpawn
             var newChild = PawnGenerator.GeneratePawn(new PawnGenerationRequest(
                 childKind,
                 mother.Faction,
-                forceGenerateNewPawn: false
+                forceGenerateNewPawn: false,
+                developmentalStages: DevelopmentalStage.Newborn
                 //newborn: true
             ));
             if (PawnUtility.TrySpawnHatchedOrBornPawn(newChild, mother))

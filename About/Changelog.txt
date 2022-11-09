@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.4.2 - Animals should no longer be born fully grown
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests.
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 
