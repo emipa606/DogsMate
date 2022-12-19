@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Vanilla Animals Expanded — Australia</li>
-    </mods>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]</xpath>
+    <success>Always</success>
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">

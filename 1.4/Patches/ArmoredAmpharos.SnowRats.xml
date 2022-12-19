@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>SnowRats</li>
-    </mods>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SnowRat"]</xpath>
+    <success>Always</success>
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">

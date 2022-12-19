@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.4.3 - Changed patches to conditional instead of modname-based.
+
+
 1.4.2 - Animals should no longer be born fully grown
 
 
