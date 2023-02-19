@@ -154,6 +154,4 @@ Intended purpose: Spende für Tierpark Neukölln
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2441132298]Last updated 2022-12-19
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2441132298]Last updated 2023-02-19

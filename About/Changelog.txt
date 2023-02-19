@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.4.4 - Added support for Swedish Vallhunds, HC_Animal_3, MorrowRim and ESCP - Trolls
+
+
 1.4.3 - Changed patches to conditional instead of modname-based.
 
 
