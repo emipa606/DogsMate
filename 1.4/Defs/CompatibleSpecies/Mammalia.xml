@@ -299,4 +299,12 @@
     <pawnKinds>
     </pawnKinds>
   </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Boomalope</defName>
+    <label>boomalopes</label>
+    <description>Engineered for chemicals production, the boomalope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce chemfuel - very carefully.</description>
+    <pawnKinds>
+      <li>Boomalope</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
 </Defs>
