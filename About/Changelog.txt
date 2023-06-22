@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.4.6 - Added support for Opossum Mod and ReGrowth: Core
+
+
 1.4.5 - Added support for Mooshroom, Multilopes, Boomaphants, Project Neutrolope, Muffaloaves, Beef Eaters and [SZ]蒙兀室韦-蒙兀族派系和相关扩展 Mughal faction and related expansions
 
 
