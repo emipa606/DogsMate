@@ -56,17 +56,14 @@ public class Patch__JobGiver_Mate__TryGiveJob
             ) is Pawn validFemalePawn)
         {
             DogsMateMod.Debug(
-                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> " +
-                $"female=<{validFemalePawn.ToStringSafe()}={validFemalePawn.kindDef.ToStringSafe()}> " +
-                "will mate -> success"
+                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> female=<{validFemalePawn.ToStringSafe()}={validFemalePawn.kindDef.ToStringSafe()}> will mate -> success"
             );
             __result = JobMaker.MakeJob(JobDefOf.Mate, validFemalePawn);
         }
         else
         {
             DogsMateMod.Debug(
-                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> " +
-                "no valid female found -> fail"
+                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> no valid female found -> fail"
             );
             __result = null;
         }
@@ -90,9 +87,7 @@ public class Patch__JobGiver_Mate__TryGiveJob
         if (!specialDict.ContainsKey(femalePawn.kindDef))
         {
             DogsMateMod.Debug(
-                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> " +
-                $"female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> " +
-                "not a valid mate"
+                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> not a valid mate"
             );
             return false;
         }
@@ -100,9 +95,7 @@ public class Patch__JobGiver_Mate__TryGiveJob
         if (femalePawn.Downed)
         {
             DogsMateMod.Debug(
-                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> " +
-                $"female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> " +
-                "female downed"
+                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> female downed"
             );
             return false;
         }
@@ -110,9 +103,7 @@ public class Patch__JobGiver_Mate__TryGiveJob
         if (!femalePawn.CanCasuallyInteractNow())
         {
             DogsMateMod.Debug(
-                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> " +
-                $"female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> " +
-                "cannot interact casually with female"
+                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> cannot interact casually with female"
             );
             return false;
         }
@@ -120,9 +111,7 @@ public class Patch__JobGiver_Mate__TryGiveJob
         if (femalePawn.IsForbidden(malePawn))
         {
             DogsMateMod.Debug(
-                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> " +
-                $"female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> " +
-                "female is forbidden"
+                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> female is forbidden"
             );
             return false;
         }
@@ -130,9 +119,7 @@ public class Patch__JobGiver_Mate__TryGiveJob
         if (femalePawn.Faction != malePawn.Faction)
         {
             DogsMateMod.Debug(
-                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> " +
-                $"female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> " +
-                "not same faction"
+                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> not same faction"
             );
             return false;
         }
@@ -140,17 +127,13 @@ public class Patch__JobGiver_Mate__TryGiveJob
         if (!PawnUtility.FertileMateTarget(malePawn, femalePawn))
         {
             DogsMateMod.Debug(
-                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> " +
-                $"female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> " +
-                "female is not fertile"
+                $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> female is not fertile"
             );
             return false;
         }
 
         DogsMateMod.Debug(
-            $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> " +
-            $"female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> " +
-            "is valid pair"
+            $"male=<{malePawn.ToStringSafe()}={malePawn.kindDef.ToStringSafe()}> female=<{femalePawn.ToStringSafe()}={femalePawn.kindDef.ToStringSafe()}> is valid pair"
         );
         return true;
     }

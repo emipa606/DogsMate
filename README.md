@@ -95,6 +95,8 @@ Added support for
 - Muffaloaves
 - Beef Eaters
 - [SZ]蒙兀室韦-蒙兀族派系和相关扩展 Mughal faction and related expansions
+- Opossum Mod
+- ReGrowth: Core
 
 
 
@@ -165,4 +167,4 @@ Intended purpose: Spende für Tierpark Neukölln
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2441132298]Last updated 2023-06-22
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2441132298]Last updated 2023-06-23

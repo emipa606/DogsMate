@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.4.7 - Sterile animals should no longer could be able to mate
+
+
 1.4.6 - Added support for Opossum Mod and ReGrowth: Core
 
 

@@ -23,33 +23,19 @@ public class DogsMateMod : Mod
         compatibleFemalesDict =
             new Dictionary<PawnKindDef, IReadOnlyDictionary<PawnKindDef, IReadOnlyCollection<HybridDef>>>();
 
-    private Settings settings;
+    public Settings Settings;
 
     public DogsMateMod(ModContentPack content) : base(content)
     {
         instance = this;
+        Settings = GetSettings<Settings>();
         currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.DogsMate"));
+            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
         var harmony = new Harmony(nameof(DogsMateMod));
         harmony.PatchAll();
     }
 
-    public Settings Settings
-    {
-        get
-        {
-            if (settings == null)
-            {
-                settings = GetSettings<Settings>();
-            }
-
-            return settings;
-        }
-        set => settings = value;
-    }
-
-    public static void Debug(string message, [CallerLineNumberAttribute] int line = 0,
-        [CallerMemberName] string caller = null)
+    public static void Debug(string message, [CallerLineNumber] int line = 0, [CallerMemberName] string caller = null)
     {
         if (MessageAlways || MessageInDevMode && Prefs.DevMode)
         {

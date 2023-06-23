@@ -46,9 +46,7 @@ public class Patch__Hediff_Pregnant__DoBirthSpawn
                 .SelectMany(x => x).GroupBy(ph => ph.p)
                 .Select(g => (g.Key, g.Select(ph => ph.h).Where(h => h.IsUsable).ToList())).ToList();
             DogsMateMod.Debug(
-                $"father=<{father.kindDef.ToStringSafe()}> " +
-                $"mother=<{mother.kindDef.ToStringSafe()}> " +
-                $"hybrids=<{hybridKinds.Select(ph => ph.p.label).ToCommaList()}>"
+                $"father=<{father.kindDef.ToStringSafe()}> mother=<{mother.kindDef.ToStringSafe()}> hybrids=<{hybridKinds.Select(ph => ph.p.label).ToCommaList()}>"
             );
         }
 
