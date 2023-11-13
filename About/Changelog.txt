@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.4.8 - Added support for a Malinois breed, thank you Annabelesca
+
+
 1.4.7 - Sterile animals should no longer could be able to mate
 
 
