@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.4.9 - Fixed compatibility issue with More Thrumbos
+
+
 1.4.8 - Added support for a Malinois breed, thank you Annabelesca
 
 

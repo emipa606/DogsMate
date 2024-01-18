@@ -2,14 +2,14 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName="GingerThrumbo"]</xpath>
-    <success>Always</success>
+    <!-- <success>Always</success> -->
     <match Class="PatchOperationAdd">
       <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Thrumbo"]/pawnKinds</xpath>
       <value>
-        <li>GingerThrumbo</li>
-        <li>BlondThrumbo</li>
-        <li>BlackThrumbo</li>
-        <li>SilverThrumbo</li>
+        <li>GingerThrumboPawn</li>
+        <li>BlondThrumboPawn</li>
+        <li>BlackThrumboPawn</li>
+        <li>SilverThrumboPawn</li>
       </value>
     </match>
   </Operation>

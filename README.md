@@ -97,6 +97,7 @@ Added support for
 - [SZ]蒙兀室韦-蒙兀族派系和相关扩展 Mughal faction and related expansions
 - Opossum Mod
 - ReGrowth: Core
+- Malinois
 
 
 
