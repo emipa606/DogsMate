@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[@Name="ESCP_TrollThingBase"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <Revolus.DogsMate.AnimalGroupDef>
+          <defName>Troll</defName>
+          <label>trolls</label>
+          <description>Trolls are thought to have diverged from apes sometime in the past. Likely a very long time ago, as the only remaining ape-like characteristics are their appearance. Most trolls are not particularly intelligent, though they more than make up for this in brute strength. The blood of trollkin possesses strong regenerative abilities, allowing the troll to heal bleeding wounds relatively quickly. This blood may be harvested during butchering, and used to create elixirs of regeneration. If dealing with a particularly aggressive troll, it is best to set it on fire, as this will inhibit their regeneration. Trolls are highly adaptable, and can be found in nearly every biome. While normal trolls make for tough foes, or pets, there are some trolls that are simply terrifyingly strong.</description>
+          <pawnKinds>
+            <li>ESCP_TrollBarren</li>
+            <li>ESCP_TrollForest</li>
+            <li>ESCP_TrollPygmy</li>
+            <li>ESCP_TrollSwamp</li>
+            <li>ESCP_TrollFungal</li>
+            <li>ESCP_TrollBoom</li>
+            <li>ESCP_TrollFrost</li>
+            <li>ESCP_TrollHill</li>
+            <li>ESCP_TrollRiver</li>
+            <li>ESCP_TrollCave</li>
+            <li>ESCP_TrollCoastal</li>
+            <li>ESCP_TrollAnima</li>
+            <li>ESCP_TrollGrahl</li>
+            <li>ESCP_TrollUdyrfrykte</li>
+          </pawnKinds>
+        </Revolus.DogsMate.AnimalGroupDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -16,15 +16,15 @@ public class HybridDef : Def
 
     private static IReadOnlyDictionary<PawnKindDef, IReadOnlyList<PawnKindDef>> _hybridParents;
 
-    public readonly List<HybridHediff> childrenHediffs = new List<HybridHediff>();
-    public readonly List<HybridHediff> femaleChildrenHediffs = new List<HybridHediff>();
-    public readonly List<HybridHediff> maleChildrenHediffs = new List<HybridHediff>();
+    public readonly List<HybridHediff> childrenHediffs = [];
+    public readonly List<HybridHediff> femaleChildrenHediffs = [];
+    public readonly List<HybridHediff> maleChildrenHediffs = [];
 
     private bool? _isUsable;
-    public List<AnimalGroupDef> children = new List<AnimalGroupDef>();
+    public List<AnimalGroupDef> children = [];
 
     public SimpleCurve fertilizationFailesIfGreaterThanZeroCurve;
-    public List<AnimalGroupDef> parents = new List<AnimalGroupDef>();
+    public List<AnimalGroupDef> parents = [];
 
     public bool IsUsable
     {
@@ -208,7 +208,7 @@ public class HybridDef : Def
             return false;
         }
 
-        hybrids = bGroupsList.Select(bGroup => aHybridDict.TryGetValue(bGroup, out var l) ? l : null)
+        hybrids = bGroupsList.Select(bGroup => aHybridDict.GetValueOrDefault(bGroup))
             .Where(l => l != null).SelectMany(x => x).Distinct().ToList();
         return hybrids.Count > 0;
     }

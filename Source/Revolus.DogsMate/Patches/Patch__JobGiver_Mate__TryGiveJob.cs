@@ -74,7 +74,7 @@ public class Patch__JobGiver_Mate__TryGiveJob
     private static bool IsValidFemale(Thing femaleThing, Pawn malePawn,
         IReadOnlyDictionary<PawnKindDef, IReadOnlyCollection<HybridDef>> specialDict)
     {
-        if (!(femaleThing is Pawn femalePawn))
+        if (femaleThing is not Pawn femalePawn)
         {
             return false;
         }

@@ -9,7 +9,7 @@ public class AnimalGroupDef : Def
 {
     private static IReadOnlyDictionary<PawnKindDef, IReadOnlyCollection<AnimalGroupDef>> _dict;
     public readonly bool canMate = true;
-    public readonly List<string> pawnKinds = new List<string>();
+    public readonly List<string> pawnKinds = [];
 
     private bool? _isUsable;
 
@@ -24,7 +24,7 @@ public class AnimalGroupDef : Def
                 return foundPawnKinds;
             }
 
-            foundPawnKinds = new List<PawnKindDef>();
+            foundPawnKinds = [];
             foreach (var pawnKind in pawnKinds)
             {
                 var kindFound = DefDatabase<PawnKindDef>.GetNamedSilentFail(pawnKind);

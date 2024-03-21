@@ -84,7 +84,7 @@ public class DogsMateMod : Mod
 
         var d = new Dictionary<PawnKindDef, HashSet<HybridDef>>
         {
-            { malePawnKindDef, new HashSet<HybridDef>() }
+            { malePawnKindDef, [] }
         };
 
         // explicitly stated to be compatible
@@ -96,7 +96,7 @@ public class DogsMateMod : Mod
             {
                 if (!d.ContainsKey(femalePawnKindDef))
                 {
-                    d.Add(femalePawnKindDef, new HashSet<HybridDef>());
+                    d.Add(femalePawnKindDef, []);
                 }
             }
         }
@@ -108,7 +108,7 @@ public class DogsMateMod : Mod
             {
                 if (!d.ContainsKey(femalePawnKindDef))
                 {
-                    d.Add(femalePawnKindDef, new HashSet<HybridDef>());
+                    d.Add(femalePawnKindDef, []);
                 }
             }
         }
@@ -123,7 +123,7 @@ public class DogsMateMod : Mod
             {
                 if (!d.TryGetValue(femalePawnKindDef, out var set))
                 {
-                    set = new HashSet<HybridDef>();
+                    set = [];
                     d.Add(femalePawnKindDef, set);
                 }
 

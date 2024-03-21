@@ -82,7 +82,8 @@ public class Patch__Hediff_Pregnant__DoBirthSpawn
             {
                 if (newChild.playerSettings != null && mother.playerSettings != null)
                 {
-                    newChild.playerSettings.AreaRestriction = mother.playerSettings.AreaRestriction;
+                    newChild.playerSettings.AreaRestrictionInPawnCurrentMap =
+                        mother.playerSettings.AreaRestrictionInPawnCurrentMap;
                 }
 
                 if (newChild.RaceProps.IsFlesh)
