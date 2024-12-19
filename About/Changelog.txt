@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.5.1 - Added Panther and Cougar to the Leopard group
+
+
 1.5.0 - Mod updated for 1.5 and passed autotests
 
 

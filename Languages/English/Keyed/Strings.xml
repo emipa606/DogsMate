@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <DM.debug>Show debug messages</DM.debug>
   <DM.debugdev>Show debug messages if dev mode is enabled</DM.debugdev>

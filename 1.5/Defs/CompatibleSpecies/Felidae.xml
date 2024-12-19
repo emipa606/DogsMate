@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <Revolus.DogsMate.AnimalGroupDef>
     <defName>Cat</defName>
@@ -30,6 +30,8 @@
     <label>leopards</label>
     <description>The leopard (Panthera pardus) is one of the five extant species in the genus Panthera, a member of the Felidae. It occurs in a wide range in sub-Saharan Africa, in small parts of Western and Central Asia, on the Indian subcontinent to Southeast and East Asia. It is listed as Vulnerable on the IUCN Red List because leopard populations are threatened by habitat loss and fragmentation, and are declining in large parts of the global range. In Hong Kong, Singapore, Kuwait, Syria, Libya, Tunisia and most likely in Morocco, leopard populations have already been extirpated. Contemporary records suggest that the leopard occurs in only 25% of its historical global range.</description>
     <pawnKinds>
+      <li>Panther</li>
+      <li>Cougar</li>
       <!-- populated by ACP and Rainforest Mod -->
     </pawnKinds>
   </Revolus.DogsMate.AnimalGroupDef>

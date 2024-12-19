@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- It's a mammal, but it lays eggs. Egg-laying animals are not implemented, yet. -->
   <Revolus.DogsMate.AnimalGroupDef>
