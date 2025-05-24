@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.5.2 - Add support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3242810152]Gulden Biome[/url]
+
+
 1.5.1 - Added Panther and Cougar to the Leopard group
 
 
