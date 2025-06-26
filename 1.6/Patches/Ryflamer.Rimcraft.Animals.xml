@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WoW_Animal_Direwolf"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Warg"]/pawnKinds</xpath>
+      <value>
+        <li>WoW_Animal_Direwolf</li>
+        <li>WoW_Animal_Frostwolf</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WoW_Animal_Frostsaber"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Tiger"]/pawnKinds</xpath>
+      <value>
+        <li>WoW_Animal_Frostsaber</li>
+        <li>WoW_Animal_Nightsaber</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WoW_Animal_Ram"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Goat"]/pawnKinds</xpath>
+      <value>
+        <li>WoW_Animal_Ram</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WoW_Animal_Horse"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Horse"]/pawnKinds</xpath>
+      <value>
+        <li>WoW_Animal_Horse</li>
+        <li>WoW_Animal_Unicorn</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="WoW_Animal_Elekk"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Elephant"]/pawnKinds</xpath>
+      <value>
+        <li>WoW_Animal_Elekk</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

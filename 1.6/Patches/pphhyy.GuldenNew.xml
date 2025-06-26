@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GuldenSheep"]</xpath>
+    <!-- <success>Always</success> -->
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Sheep"]/pawnKinds</xpath>
+          <value>
+            <li>GuldenSheep</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Horse"]/pawnKinds</xpath>
+          <value>
+            <li>Gulden_Animal_Capricorn</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Rat"]/pawnKinds</xpath>
+          <value>
+            <li>Gulden_Rat</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Bear"]/pawnKinds</xpath>
+          <value>
+            <li>GuldenRuneBear</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Hare"]/pawnKinds</xpath>
+          <value>
+            <li>GuldenRabbitgaroo</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

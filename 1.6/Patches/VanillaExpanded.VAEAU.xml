@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Platypus"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Platypus"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_Platypus</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Kangaroo"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_Kangaroo</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Wombat"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_Boombat</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

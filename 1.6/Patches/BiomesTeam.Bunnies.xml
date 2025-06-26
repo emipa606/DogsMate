@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Bunnies_BunFox"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Hare"]/pawnKinds</xpath>
+      <value>
+        <li>Bunnies_BunFox</li>
+        <li>Bunnies_Caerbunny</li>
+        <li>Bunnies_ChocolateRabbit</li>
+        <li>Bunnies_Donkit</li>
+        <li>Bunnies_DustBunny</li>
+        <li>Bunnies_EmpireRabbit</li>
+        <li>Bunnies_Hoptimus</li>
+        <li>Bunnies_HoptimusPrime</li>
+        <li>Bunnies_Jackalope</li>
+        <li>Bunnies_Microbunny</li>
+        <li>Bunnies_Rabbuck</li>
+        <li>Bunnies_Wolpertinger</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

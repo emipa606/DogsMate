@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TRAHS_Fox_DemonRace"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Fox"]/pawnKinds</xpath>
+      <value>
+        <li>TRAHS_Fox_DemonRace</li>
+        <li>TRAHS_Fox_BeautifulRace</li>
+        <li>TRAHS_Fox_ChemfuelRace</li>
+        <li>TRAHS_Fox_CreamRace</li>
+        <li>TRAHS_Fox_CuteRace</li>
+        <li>TRAHS_Fox_DarkRace</li>
+        <li>TRAHS_Fox_DragonRace</li>
+        <li>TRAHS_Fox_InsectoidRace</li>
+        <li>TRAHS_Fox_MushroomRace</li>
+        <li>TRAHS_Fox_RiceRace</li>
+        <li>TRAHS_Fox_SteelRace</li>
+        <li>TRAHS_Fox_SandstoneRace</li>
+        <li>TRAHS_Fox_GraniteRace</li>
+        <li>TRAHS_Fox_LimestoneRace</li>
+        <li>TRAHS_Fox_SlateRace</li>
+        <li>TRAHS_Fox_MarbleRace</li>
+        <li>TRAHS_Fox_WoodRace</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

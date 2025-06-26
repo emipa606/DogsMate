@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.6.0 - Mod updated for 1.6 and passed autotests
+
+
 1.5.2 - Add support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3242810152]Gulden Biome[/url]
 
 

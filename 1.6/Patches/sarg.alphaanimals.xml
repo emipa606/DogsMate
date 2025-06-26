@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_GreyCoatedMouflon"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Sheep"]/pawnKinds</xpath>
+      <value>
+        <li>AA_GreyCoatedMouflon</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

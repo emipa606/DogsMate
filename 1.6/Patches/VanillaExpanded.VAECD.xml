@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Beagle"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_Beagle</li>
+            <li>AEXP_Chihuahua</li>
+            <li>AEXP_Corgi</li>
+            <li>AEXP_FrenchBulldog</li>
+            <li>AEXP_GermanShepherd</li>
+            <li>AEXP_GreatDane</li>
+            <li>AEXP_Poodle</li>
+            <li>AEXP_Pug</li>
+            <li>AEXP_Rottweiler</li>
+            <li>AEXP_Shih-Tzu</li>
+            <li>AEXP_WelshTerrier</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cat"]/pawnKinds</xpath>
+          <value>
+            <li>AEXP_CatAbyssinian</li>
+            <li>AEXP_CatBengal</li>
+            <li>AEXP_CatBritishShorthair</li>
+            <li>AEXP_CatMaineCoon</li>
+            <li>AEXP_CatMunchkin</li>
+            <li>AEXP_CatNorwegianForest</li>
+            <li>AEXP_CatPersian</li>
+            <li>AEXP_CatSiamese</li>
+            <li>AEXP_CatSomali</li>
+            <li>AEXP_CatSphynx</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

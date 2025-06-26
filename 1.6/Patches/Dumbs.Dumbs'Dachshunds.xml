@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ERN_DachshundShorthair"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
+      <value>
+        <li>ERN_DachshundShorthair</li>
+        <li>ERN_DachshundLonghair</li>
+        <li>ERN_DachshundWirehair</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

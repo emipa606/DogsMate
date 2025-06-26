@@ -98,6 +98,7 @@ Added support for
 - Opossum Mod
 - ReGrowth: Core
 - Malinois
+- Gulden Biome
 
 
 

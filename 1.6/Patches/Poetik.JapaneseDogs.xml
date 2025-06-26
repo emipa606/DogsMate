@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Poetik_Shiba"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
+      <value>
+        <li>Poetik_Shiba</li>
+        <li>Poetik_Kai</li>
+        <li>Poetik_Hokkaido</li>
+        <li>Poetik_Kishu</li>
+        <li>Poetik_Shikoku</li>
+        <li>Poetik_AkitaJapanese</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>
