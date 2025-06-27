@@ -5,6 +5,12 @@
 Update of Revoluss mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2109362835
 
+**Since 1.6 added support for cross-breeding, this mod now uses the vanilla system for it, no longer relying on Harmony-patches.
+It does however add the "Can mate with" info in the info-card that is otherwise not shown.
+
+It also fixes any wrongly configured animals since vanilla crossbreeding requires animals to be defined on all other animals they can crossbreed with.
+As there is no way of knowing if another mod has added an animal to the crossbreeding list dynamically this mod fixes that by crosschecking all animals at game-start.**
+
 Added support for
 
 

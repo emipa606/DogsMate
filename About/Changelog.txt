@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.6.1 - Fixed statdef issue with non-animals
+
+
 1.6.0 - Mod updated for 1.6 and passed autotests
 
 

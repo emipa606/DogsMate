@@ -12,12 +12,12 @@ public class CrossBreedStatWorker : StatWorker
     {
         if (req.Pawn != null)
         {
-            return req.Pawn.def.race.canCrossBreedWith;
+            return !req.Pawn.def.race.Animal ? [] : req.Pawn.def.race.canCrossBreedWith;
         }
 
         if (req.Thing != null)
         {
-            return req.Thing.def.race.canCrossBreedWith;
+            return req.Thing.def.race?.Animal == false ? [] : req.Thing.def.race?.canCrossBreedWith;
         }
 
         if (req.Def == null)
@@ -28,9 +28,9 @@ public class CrossBreedStatWorker : StatWorker
         switch (req.Def)
         {
             case ThingDef thingDef:
-                return thingDef.race.canCrossBreedWith;
+                return thingDef.race?.Animal == false ? [] : thingDef.race?.canCrossBreedWith;
             case PawnKindDef pawnKindDef:
-                return pawnKindDef.race.race.canCrossBreedWith;
+                return !pawnKindDef.race.race.Animal ? [] : pawnKindDef.race.race.canCrossBreedWith;
         }
 
         return [];
