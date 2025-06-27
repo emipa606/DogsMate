@@ -10,12 +10,12 @@ public class CrossBreedStatWorker : StatWorker
 {
     private static List<ThingDef> possibleCrossbreeds(StatRequest req)
     {
-        if (req.Pawn != null)
+        if (req.Pawn != null && DogsMate.ValidAnimals.Contains(req.Pawn.def))
         {
             return !req.Pawn.def.race.Animal ? [] : req.Pawn.def.race.canCrossBreedWith;
         }
 
-        if (req.Thing != null)
+        if (req.Thing != null && DogsMate.ValidAnimals.Contains(req.Thing.def))
         {
             return req.Thing.def.race?.Animal == false ? [] : req.Thing.def.race?.canCrossBreedWith;
         }
@@ -28,9 +28,9 @@ public class CrossBreedStatWorker : StatWorker
         switch (req.Def)
         {
             case ThingDef thingDef:
-                return thingDef.race?.Animal == false ? [] : thingDef.race?.canCrossBreedWith;
+                return !DogsMate.ValidAnimals.Contains(thingDef) ? [] : thingDef.race.canCrossBreedWith;
             case PawnKindDef pawnKindDef:
-                return !pawnKindDef.race.race.Animal ? [] : pawnKindDef.race.race.canCrossBreedWith;
+                return !DogsMate.ValidAnimals.Contains(pawnKindDef.race) ? [] : pawnKindDef.race.race.canCrossBreedWith;
         }
 
         return [];

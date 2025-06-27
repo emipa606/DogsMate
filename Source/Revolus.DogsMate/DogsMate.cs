@@ -8,6 +8,8 @@ namespace Revolus.DogsMate;
 [StaticConstructorOnStartup]
 public static class DogsMate
 {
+    public static readonly List<ThingDef> ValidAnimals;
+
     static DogsMate()
     {
         var correctedAnimals = new HashSet<ThingDef>();
@@ -64,5 +66,8 @@ public static class DogsMate
             Log.Message(
                 $"[DogsMate]: Corrected {correctedAnimals.Count} faulty configured animals: {Environment.NewLine}{string.Join(Environment.NewLine, correctedAnimals.Select(def => def.label))}");
         }
+
+        ValidAnimals = DefDatabase<ThingDef>.AllDefsListForReading.Where(def =>
+            def.race?.Animal == true && !def.IsCorpse && def.race.canCrossBreedWith?.Any() == true).ToList();
     }
 }
