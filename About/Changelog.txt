@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.6.3 - Added support for Mythic Ages: Megafauna Bestiary, ↁ Elves (Continued) and Erin's Fluffy Fauna
+
+
 1.6.2 - Fixed info-card view again
 
 

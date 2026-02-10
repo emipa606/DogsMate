@@ -192,6 +192,7 @@
     <pawnKinds>
       <li>Deer</li>
       <li>Elk</li>
+      <li>Caribou</li>
     </pawnKinds>
   </Revolus.DogsMate.AnimalGroupDef>
   <Revolus.DogsMate.AnimalGroupDef>
@@ -305,6 +306,14 @@
     <description>Engineered for chemicals production, the boomalope grows a large sac of volatile chemicals on its back. Though it is weak and fragile for its size, other animals have learned to avoid it because of the huge explosion it produces when it dies. It can be milked to produce chemfuel - very carefully.</description>
     <pawnKinds>
       <li>Boomalope</li>
+    </pawnKinds>
+  </Revolus.DogsMate.AnimalGroupDef>
+  <Revolus.DogsMate.AnimalGroupDef>
+    <defName>Wolverine</defName>
+    <label>wolverine</label>
+    <description>The wolverine is the largest land-dwelling member of the family Mustelidae. It is a muscular carnivore and a solitary animal. The wolverine has a reputation for ferocity and strength out of proportion to its size, with the documented ability to kill prey many times larger than itself.</description>
+    <pawnKinds>
+      <!-- Populated by patches -->
     </pawnKinds>
   </Revolus.DogsMate.AnimalGroupDef>
 </Defs>
