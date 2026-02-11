@@ -105,6 +105,9 @@ Added support for
 - ReGrowth: Core
 - Malinois
 - Gulden Biome
+- Mythic Ages: Megafauna Bestiary
+- ↁ Elves (Continued)
+- Erin's Fluffy Fauna
 
 
 
