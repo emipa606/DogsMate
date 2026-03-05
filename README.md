@@ -108,6 +108,7 @@ Added support for
 - Mythic Ages: Megafauna Bestiary
 - ↁ Elves (Continued)
 - Erin's Fluffy Fauna
+- CheetahCaptain's Horse Breeds
 
 
 

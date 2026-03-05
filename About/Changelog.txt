@@ -1,5 +1,8 @@
 # Changelog for DogsMate
 
+1.6.5 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3033602543]CheetahCaptain's Horse Breeds[/url]
+
+
 1.6.4 - Added Great Wolf from Odyssey
 
 

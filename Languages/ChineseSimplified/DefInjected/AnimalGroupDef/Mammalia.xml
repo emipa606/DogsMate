@@ -159,4 +159,8 @@
   <Zebra.label>斑马</Zebra.label>
   <!-- EN: Zebras (subgenus Hippotigris) are African equines with distinctive black-and-white striped coats. There are three extant species: the Grévy's zebra (Equus grevyi), plains zebra (E. quagga), and the mountain zebra (E. zebra). Zebras share the genus Equus with horses and asses, the three groups being the only living members of the family Equidae. Zebra stripes come in different patterns, unique to each individual. Several theories have been proposed for the function of these stripes, with most evidence supporting them as a form of protection from biting flies. Zebras inhabit eastern and southern Africa and can be found in a variety of habitats such as savannahs, grasslands, woodlands, shrublands, and mountainous areas. -->
   <Zebra.description>斑马（Hippotigris 亚属）是非洲马科动物，身上有独特的黑白条纹。现存的斑马有三种：格瑞斑马（Equus grevyi）、平原斑马（E. quagga）和山地斑马（E. zebra）。斑马与马和驴同属马属（Equus），是马科（Equidae）中仅存的三个族群。斑马的条纹图案各不相同，每个个体都是独一无二的。关于斑马条纹的功能，人们提出了几种理论，大多数证据都支持斑马条纹是一种保护措施，以防苍蝇叮咬。斑马栖息在非洲东部和南部，栖息地多种多样，如热带稀树草原、草原、林地、灌木丛和山区。</Zebra.description>
+  <!-- EN: wolverine -->
+  <Wolverine.label>狼獾</Wolverine.label>
+  <!-- EN: The wolverine is the largest land-dwelling member of the family Mustelidae. It is a muscular carnivore and a solitary animal. The wolverine has a reputation for ferocity and strength out of proportion to its size, with the documented ability to kill prey many times larger than itself. -->
+  <Wolverine.description>狼獾是鼬科最大的陆栖动物。它是一种肌肉发达的食肉动物，也是一种独居动物。狼獾的凶猛和力量与其体型极不相称，据记载，狼獾有能力杀死比自己大数倍的猎物。</Wolverine.description>
 </LanguageData>
