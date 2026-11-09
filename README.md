@@ -109,6 +109,7 @@ Added support for
 - ↁ Elves (Continued)
 - Erin's Fluffy Fauna
 - CheetahCaptain's Horse Breeds
+- Sheepdog - Border Collie Herding Mod
 
 
 
@@ -180,4 +181,4 @@ Intended purpose: Spende für Tierpark Neukölln
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/DogsMate?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2441132298) | tags: breed compatibility
+[![Image](https://img.shields.io/github/v/release/emipa606/DogsMate?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2441132298) | breed compatibility

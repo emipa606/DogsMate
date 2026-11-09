@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AkhalTeke_horse"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Horse"]/pawnKinds</xpath>
+          <value>
+            <li>AkhalTeke_horse</li>
+            <li>Appaloosa_horse</li>
+            <li>Arabian_horse</li>
+            <li>Connemara_horse</li>
+            <li>Fjord_horse</li>
+            <li>Friesian_horse</li>
+            <li>Gypsy_horse</li>
+            <li>IrishDraught_horse</li>
+            <li>IrishHunter_horse</li>
+            <li>Mustang_horse</li>
+            <li>Paint_horse</li>
+            <li>Przewalski_horse</li>
+            <li>Quarter_horse</li>
+            <li>Shetland_pony</li>
+            <li>Shire_horse</li>
+            <li>Thoroughbred_horse</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

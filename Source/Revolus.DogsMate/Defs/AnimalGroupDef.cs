@@ -5,24 +5,22 @@ namespace Revolus.DogsMate;
 
 public class AnimalGroupDef : Def
 {
-    public readonly bool canMate = true;
     public readonly HashSet<ThingDef> FoundRaces = [];
+    public readonly bool canMate = true;
     private readonly List<string> pawnKinds = [];
-
-    private List<PawnKindDef> foundPawnKinds;
 
     private bool? isUsable;
 
-    public List<PawnKindDef> FoundPawnKinds
+    private List<PawnKindDef> FoundPawnKinds
     {
         get
         {
-            if (foundPawnKinds != null)
+            if (field != null)
             {
-                return foundPawnKinds;
+                return field;
             }
 
-            foundPawnKinds = [];
+            field = [];
             foreach (var pawnKind in pawnKinds)
             {
                 var kindFound = DefDatabase<PawnKindDef>.GetNamedSilentFail(pawnKind);
@@ -31,11 +29,11 @@ public class AnimalGroupDef : Def
                     continue;
                 }
 
-                foundPawnKinds.Add(kindFound);
+                field.Add(kindFound);
                 FoundRaces.Add(kindFound.race);
             }
 
-            return foundPawnKinds;
+            return field;
         }
     }
 

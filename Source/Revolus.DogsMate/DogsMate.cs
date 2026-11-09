@@ -45,12 +45,10 @@ public static class DogsMate
             foreach (var animal in animalGroup.FoundRaces)
             {
                 animal.race.canCrossBreedWith ??= [];
-                foreach (var otherAnimal in animalGroup.FoundRaces.Where(def => def != animal))
+                foreach (var otherAnimal in animalGroup.FoundRaces.Where(def =>
+                             def != animal && !animal.race.canCrossBreedWith.Contains(def)))
                 {
-                    if (!animal.race.canCrossBreedWith.Contains(otherAnimal))
-                    {
-                        animal.race.canCrossBreedWith.Add(otherAnimal);
-                    }
+                    animal.race.canCrossBreedWith.Add(otherAnimal);
                 }
             }
         }

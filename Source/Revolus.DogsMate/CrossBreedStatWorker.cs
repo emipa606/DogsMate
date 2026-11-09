@@ -46,7 +46,7 @@ public class CrossBreedStatWorker : StatWorker
         return 0;
     }
 
-    public override string GetStatDrawEntryLabel(StatDef statDef, float value, ToStringNumberSense numberSense,
+    public override string GetStatDrawEntryLabel(StatDef stat, float value, ToStringNumberSense numberSense,
         StatRequest optionalReq, bool finalized = true)
     {
         var animalDefs = possibleCrossbreeds(optionalReq);
@@ -55,9 +55,9 @@ public class CrossBreedStatWorker : StatWorker
             : "";
     }
 
-    public override IEnumerable<Dialog_InfoCard.Hyperlink> GetInfoCardHyperlinks(StatRequest req)
+    public override IEnumerable<Dialog_InfoCard.Hyperlink> GetInfoCardHyperlinks(StatRequest statRequest)
     {
-        var animalDefs = possibleCrossbreeds(req);
+        var animalDefs = possibleCrossbreeds(statRequest);
         if (animalDefs.Any())
         {
             return animalDefs.OrderBy(thingDef => thingDef.label, StringComparer.InvariantCultureIgnoreCase)

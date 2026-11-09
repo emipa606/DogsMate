@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_KillerCat"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cat"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_KillerCat</li>
+        <li>ExC_NEKO_Shiro</li>
+        <li>ExC_NEKO_Kuro</li>
+        <li>ExC_NEKO_Ash</li>
+        <li>ExC_NEKO_Mike</li>
+        <li>ExC_NEKO_Chatora</li>
+        <li>ExC_NEKO_Sabatora</li>
+        <li>ExC_NEKO_Kijitora</li>
+        <li>ExC_NEKO_Creamtora</li>
+        <li>ExC_NEKO_Point</li>
+        <li>ExC_NEKO_Tortoise</li>
+        <li>ExC_NEKO_Bicolor</li>
+        <li>ExC_NEKO_Siamese</li>
+        <li>ExC_NEKO_Cat</li>
+        <li>ExC_NEKO_BombCat</li>
+        <li>ExC_NEKO_Turtle</li>
+        <li>ExC_NEKO_Monkey</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_Dog"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_Dog</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_Hare"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Hare"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_Hare</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_Tiger"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Tiger"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_Tiger</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_Lion"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Lion"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_Lion</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_Fox"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Fox"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_Fox</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_Bear"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Bear"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_Bear</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_Horse"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Horse"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_Horse</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_Muffalo"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Bison"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_Muffalo</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_Sheep"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Sheep"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_Sheep</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ExC_NEKO_Cow"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cow"]/pawnKinds</xpath>
+      <value>
+        <li>ExC_NEKO_Cow</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StatDef>
+    <defName>Revolus_DogsMate_CompatibleStat</defName>
+    <label>Can mate with</label>
+    <description>This animal can reproduce with other races of its own species, and/or closely related species.</description>
+    <category>BasicsNonPawnImportant</category>
+    <showNonAbstract>true</showNonAbstract>
+    <showOnPawns>false</showOnPawns>
+    <workerClass>Revolus.DogsMate.CrossBreedStatWorker</workerClass>
+  </StatDef>
+</Defs>

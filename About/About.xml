@@ -11,6 +11,7 @@
     <li>1.4</li>
     <li>1.5</li>
     <li>1.6</li>
+    <li>1.7</li>
   </supportedVersions>
   <modDependencies />
   <loadAfter />
@@ -121,6 +122,7 @@ Added support for
 [*]ↁ Elves (Continued)
 [*]Erin's Fluffy Fauna
 [*]CheetahCaptain's Horse Breeds
+[*]Sheepdog - Border Collie Herding Mod
 [/list]
 
 [img]https://img.litet.net/logos/Notice.png[/img]
@@ -194,6 +196,6 @@ Intended purpose: Spende für Tierpark Neukölln
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
 [/list] 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2441132298][img]https://img.shields.io/github/v/release/emipa606/DogsMate?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: breed compatibility</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.6</modVersion>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2441132298][img]https://img.shields.io/github/v/release/emipa606/DogsMate?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | breed compatibility</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.7.0</modVersion>
 </ModMetaData>

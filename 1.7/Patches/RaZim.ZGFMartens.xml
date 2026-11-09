@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZGF_BeechMart"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Marten"]/pawnKinds</xpath>
+          <value>
+            <li>ZGF_BeechMart</li>
+            <li>ZGF_JapaneseMart</li>
+            <li>ZGF_NilgiriMart</li>
+            <li>ZGF_PineMart</li>
+            <li>ZGF_RimMart</li>
+            <li>ZGF_Sable</li>
+            <li>ZGF_YellowMart</li>
+            <!-- <li>ZGF_MegaMart</li> -->
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
