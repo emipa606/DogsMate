@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Vanilla Ranching Expanded: add its Border Collie to the Dog breeding group.
+       The conditional keeps VRE optional and avoids errors when it is absent. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VRE_Collie"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
+      <value>
+        <li>VRE_Collie</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>
